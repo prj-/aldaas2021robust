@@ -1,0 +1,100 @@
+  0 KSP Residual norm 3.445841955799e+04 
+  1 KSP Residual norm 1.247410742057e+02 
+  2 KSP Residual norm 3.765614780145e+01 
+  3 KSP Residual norm 2.057791308902e+01 
+  4 KSP Residual norm 1.304868386688e+01 
+  5 KSP Residual norm 6.115720391388e+00 
+  6 KSP Residual norm 4.298794205464e+00 
+  7 KSP Residual norm 3.839269188619e+00 
+  8 KSP Residual norm 3.832715271887e+00 
+  9 KSP Residual norm 3.774536679510e+00 
+ 10 KSP Residual norm 3.192550430544e+00 
+ 11 KSP Residual norm 2.371733909842e+00 
+ 12 KSP Residual norm 1.325706263563e+00 
+ 13 KSP Residual norm 6.082067638016e-01 
+ 14 KSP Residual norm 4.911100159827e-01 
+ 15 KSP Residual norm 4.431288962584e-01 
+ 16 KSP Residual norm 3.154222845969e-01 
+ 17 KSP Residual norm 2.792618546082e-01 
+ 18 KSP Residual norm 1.986426294421e-01 
+ 19 KSP Residual norm 1.878832465753e-01 
+ 20 KSP Residual norm 1.201155762199e-01 
+ 21 KSP Residual norm 1.103367359073e-01 
+ 22 KSP Residual norm 7.003140897615e-02 
+ 23 KSP Residual norm 6.068844829575e-02 
+ 24 KSP Residual norm 5.497649465385e-02 
+ 25 KSP Residual norm 3.779154300818e-02 
+ 26 KSP Residual norm 1.995514047730e-02 
+ 27 KSP Residual norm 1.845262268295e-02 
+ 28 KSP Residual norm 9.222181390088e-03 
+ 29 KSP Residual norm 7.942172598855e-03 
+ 30 KSP Residual norm 3.844511240768e-03 
+ 31 KSP Residual norm 1.718891299290e-03 
+ 32 KSP Residual norm 9.562818679709e-04 
+ 33 KSP Residual norm 4.792322798775e-04 
+ 34 KSP Residual norm 4.225429591996e-04 
+ 35 KSP Residual norm 3.768452636216e-04 
+ 36 KSP Residual norm 2.966767552143e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 36
+KSP Object: 4 MPI processes
+  type: gmres
+    restart=100, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    happy breakdown tolerance 1e-30
+  maximum iterations=1000, initial guess is zero
+  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  right preconditioning
+  using UNPRECONDITIONED norm type for convergence test
+PC Object: 4 MPI processes
+  type: asm
+    total subdomain blocks = 4, amount of overlap = 1
+    restriction/interpolation type - RESTRICT
+    Local solver information for first block is in the following KSP and PC objects on rank 0:
+    Use -ksp_view ::ascii_info_detail to display information for all blocks
+  KSP Object: (sub_) 1 MPI processes
+    type: preonly
+    maximum iterations=10000, initial guess is zero
+    tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+    left preconditioning
+    using NONE norm type for convergence test
+  PC Object: (sub_) 1 MPI processes
+    type: cholesky
+      out-of-place factorization
+      tolerance for zero pivot 2.22045e-14
+      matrix ordering: nd
+      factor fill ratio given 5., needed 3.30375
+        Factored matrix follows:
+          Mat Object: 1 MPI processes
+            type: seqsbaij
+            rows=4297, cols=4297
+            package used to perform factorization: petsc
+            total: nonzeros=103024, allocated nonzeros=103024
+                block size is 1
+    linear system matrix = precond matrix:
+    Mat Object: (sub_) 1 MPI processes
+      type: seqaij
+      rows=4297, cols=4297
+      total: nonzeros=58071, allocated nonzeros=58071
+      total number of mallocs used during MatSetValues calls=0
+        not using I-node routines
+  linear system matrix followed by preconditioner matrix:
+  Mat Object: 4 MPI processes
+    type: normal
+    rows=16675, cols=16675
+  Mat Object: 4 MPI processes
+    type: mpiaij
+    rows=16675, cols=16675
+    total: nonzeros=223395, allocated nonzeros=223395
+    total number of mallocs used during MatSetValues calls=0
+      not using I-node (on process 0) routines
+||A^T(Ax-b)|| / ||Ax-b|| = 0.0004330719898002116 / 40.19713835211666 = 1.0773701998550536e-05
+WARNING! There are options you set that were not used!
+WARNING! could be spelling mistake, etc!
+There are 8 unused database options. They are:
+Option left: name:-mg_coarse_pc_type value: redundant
+Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
+Option left: name:-pc_hpddm_define_subdomains (no value)
+Option left: name:-pc_hpddm_levels_1_eps_nev value: 20
+Option left: name:-pc_hpddm_levels_1_st_share_sub_ksp (no value)
+Option left: name:-pc_hpddm_levels_1_sub_pc_type value: cholesky
+Option left: name:-pc_hypre_boomeramg_print_statistics value: 1

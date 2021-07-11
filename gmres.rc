@@ -1,0 +1,25 @@
+# general options
+-ksp_converged_reason
+-ksp_max_it 1000
+-ksp_rtol 1.0e-8
+-ksp_gmres_restart 100
+-ksp_pc_side right
+-ksp_monitor
+
+# for PCHPDDM
+-pc_hpddm_levels_1_sub_pc_type cholesky
+-pc_hpddm_levels_1_st_share_sub_ksp
+-pc_hpddm_levels_1_eps_nev 20
+-pc_hpddm_coarse_pc_type cholesky
+-pc_hpddm_define_subdomains
+
+# for PCASM
+-sub_pc_type cholesky
+
+# for PCHYPRE
+-pc_hypre_boomeramg_print_statistics 1
+
+# for PCGAMG
+-pc_use_amat false
+-mg_coarse_pc_type redundant
+-mg_coarse_redundant_pc_type cholesky

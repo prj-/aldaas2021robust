@@ -1,0 +1,42 @@
+Linear solve converged due to CONVERGED_ITS iterations 1
+KSP Object: 1 MPI processes
+  type: preonly
+  maximum iterations=1000, initial guess is zero
+  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  left preconditioning
+  using NONE norm type for convergence test
+PC Object: 1 MPI processes
+  type: qr
+    out-of-place factorization
+    tolerance for zero pivot 2.22045e-14
+    matrix ordering: external
+    factor fill ratio given 0., needed 0.
+      Factored matrix follows:
+        Mat Object: 1 MPI processes
+          type: spqr
+          rows=234023, cols=9393
+          package used to perform factorization: spqr
+          total: nonzeros=10205860, allocated nonzeros=10205860
+  linear system matrix = precond matrix:
+  Mat Object: 1 MPI processes
+    type: seqaij
+    rows=234023, cols=9393
+    total: nonzeros=853829, allocated nonzeros=853829
+    total number of mallocs used during MatSetValues calls=0
+      using I-node routines: found 83767 nodes, limit used is 5
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000000 / 273.553056 = 0.000000
+WARNING! There are options you set that were not used!
+WARNING! could be spelling mistake, etc!
+There are 12 unused database options. They are:
+Option left: name:-mg_coarse_pc_type value: redundant
+Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-pc_asm_type value: basic
+Option left: name:-pc_hpddm_coarse_correction value: balanced
+Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
+Option left: name:-pc_hpddm_define_subdomains (no value)
+Option left: name:-pc_hpddm_levels_1_eps_nev value: 20
+Option left: name:-pc_hpddm_levels_1_pc_asm_type value: basic
+Option left: name:-pc_hpddm_levels_1_st_share_sub_ksp (no value)
+Option left: name:-pc_hpddm_levels_1_sub_pc_type value: cholesky
+Option left: name:-pc_hypre_boomeramg_print_statistics value: 1
+Option left: name:-sub_pc_type value: cholesky

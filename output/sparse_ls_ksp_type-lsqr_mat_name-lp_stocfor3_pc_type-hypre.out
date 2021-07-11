@@ -1,0 +1,127 @@
+
+
+ Num MPI tasks = 4
+
+ Num OpenMP threads = 1
+
+
+BoomerAMG SETUP PARAMETERS:
+
+ Max levels = 25
+ Num levels = 2
+
+ Strength Threshold = 0.250000
+ Interpolation Truncation Factor = 0.000000
+ Maximum Row Sum Threshold for Dependency Weakening = 0.900000
+
+ Coarsening Type = Falgout-CLJP 
+ measures are determined locally
+
+
+ No global partition option chosen.
+
+ Interpolation = modified classical interpolation
+
+Operator Matrix Information:
+
+             nonzero            entries/row          row sums
+lev    rows  entries sparse   min  max     avg      min         max
+======================================================================
+  0   16675   223395  0.001     3   62    13.4  -1.098e+04   3.138e+06
+  1     420      864  0.005     1    4     2.1   1.021e+00   3.922e+00
+
+
+Interpolation Matrix Information:
+                    entries/row        min        max            row sums
+lev  rows x cols  min  max  avgW     weight      weight       min         max
+================================================================================
+  0 16675 x 420     0    1   0.1   2.038e-01   3.570e-01   0.000e+00   1.000e+00
+
+
+     Complexity:    grid = 1.025187
+                operator = 1.003868
+                memory = 1.009669
+
+
+
+
+BoomerAMG SOLVER PARAMETERS:
+
+  Maximum number of cycles:         1 
+  Stopping Tolerance:               0.000000e+00 
+  Cycle type (1 = V, 2 = W, etc.):  1
+
+  Relaxation Parameters:
+   Visiting Grid:                     down   up  coarse
+            Number of sweeps:            1    1     1 
+   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      6    6     6 
+   Point types, partial sweeps (1=C, -1=F):
+                  Pre-CG relaxation (down):   1  -1
+                   Post-CG relaxation (up):  -1   1
+                             Coarsest grid:   0
+
+  0 KSP resid norm 8.836103988221e+01
+  1 KSP resid norm 7.109941691073e+01 normal eq resid norm 9.647686470109e+00 matrix norm 3.062907705646e+04
+Linear solve did not converge due to DIVERGED_BREAKDOWN iterations 1
+KSP Object: 4 MPI processes
+  type: lsqr
+    standard error not computed
+    using exact matrix norm
+  maximum iterations=1000, initial guess is zero
+  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  left preconditioning
+  using UNPRECONDITIONED norm type for convergence test
+PC Object: 4 MPI processes
+  type: hypre
+    HYPRE BoomerAMG preconditioning
+      Cycle type V
+      Maximum number of levels 25
+      Maximum number of iterations PER hypre call 1
+      Convergence tolerance PER hypre call 0.
+      Threshold for strong coupling 0.25
+      Interpolation truncation factor 0.
+      Interpolation: max elements per row 0
+      Number of levels of aggressive coarsening 0
+      Number of paths for aggressive coarsening 1
+      Maximum row sums 0.9
+      Sweeps down         1
+      Sweeps up           1
+      Sweeps on coarse    1
+      Relax down          symmetric-SOR/Jacobi
+      Relax up            symmetric-SOR/Jacobi
+      Relax on coarse     Gaussian-elimination
+      Relax weight  (all)      1.
+      Outer relax weight (all) 1.
+      Using CF-relaxation
+      Not using more complex smoothers.
+      Measure type        local
+      Coarsen type        Falgout
+      Interpolation type  classical
+  linear system matrix followed by preconditioner matrix:
+  Mat Object: 4 MPI processes
+    type: mpiaij
+    rows=23541, cols=16675
+    total: nonzeros=72721, allocated nonzeros=72721
+    total number of mallocs used during MatSetValues calls=0
+      using I-node (on process 0) routines: found 2760 nodes, limit used is 5
+  Mat Object: 4 MPI processes
+    type: mpiaij
+    rows=16675, cols=16675
+    total: nonzeros=223395, allocated nonzeros=223395
+    total number of mallocs used during MatSetValues calls=0
+      not using I-node (on process 0) routines
+||A^T(Ax-b)|| / ||Ax-b|| = 3486.075669 / 71.099417 = 49.031002
+WARNING! There are options you set that were not used!
+WARNING! could be spelling mistake, etc!
+There are 11 unused database options. They are:
+Option left: name:-mg_coarse_pc_type value: redundant
+Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-pc_asm_type value: basic
+Option left: name:-pc_hpddm_coarse_correction value: balanced
+Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
+Option left: name:-pc_hpddm_define_subdomains (no value)
+Option left: name:-pc_hpddm_levels_1_eps_nev value: 20
+Option left: name:-pc_hpddm_levels_1_pc_asm_type value: basic
+Option left: name:-pc_hpddm_levels_1_st_share_sub_ksp (no value)
+Option left: name:-pc_hpddm_levels_1_sub_pc_type value: cholesky
+Option left: name:-sub_pc_type value: cholesky
