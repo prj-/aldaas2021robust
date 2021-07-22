@@ -28,7 +28,7 @@ int main(int argc,char **args)
   PetscMPIInt    rank;
   PetscReal      norm[2];
   PetscInt       m,n;
-  PetscBool      normal = PETSC_FALSE,flg;
+  PetscBool      normal = PETSC_FALSE,flg,qr = PETSC_FALSE;
   PetscViewer    viewer;
   char           name[PETSC_MAX_PATH_LEN];
   PetscErrorCode ierr;
@@ -54,7 +54,10 @@ int main(int argc,char **args)
     MatPartitioning mpart;
     Mat             perm;
     // begin partitioning phase (section 4.1.1)
-    ierr = MatTransposeMatMult(A,A,MAT_INITIAL_MATRIX,PETSC_DEFAULT,&B);CHKERRQ(ierr);
+    ierr = MatProductCreate(A,A,NULL,&B);CHKERRQ(ierr);
+    ierr = MatProductSetType(B,MATPRODUCT_AtB);CHKERRQ(ierr);
+    ierr = MatProductSetFromOptions(B);CHKERRQ(ierr);
+    ierr = MatProductSymbolic(B);CHKERRQ(ierr);
     ierr = MatPartitioningCreate(PETSC_COMM_WORLD,&mpart);CHKERRQ(ierr);
     ierr = MatPartitioningSetAdjacency(mpart,B);CHKERRQ(ierr);
     ierr = MatPartitioningSetFromOptions(mpart);CHKERRQ(ierr);
@@ -62,9 +65,21 @@ int main(int argc,char **args)
     ierr = MatPartitioningDestroy(&mpart);CHKERRQ(ierr);
     ierr = ISBuildTwoSided(is,NULL,&rows);CHKERRQ(ierr);
     ierr = ISDestroy(&is);CHKERRQ(ierr);
+    ierr = PetscObjectTypeCompare((PetscObject)ksp,KSPLSQR,&normal);CHKERRQ(ierr);
+    normal = (PetscBool)!normal;
+    ierr = PetscOptionsGetBool(NULL,NULL,"-pc_use_qr",&qr,NULL);CHKERRQ(ierr);
+    if (!qr) {
+      ierr = MatProductNumeric(B);CHKERRQ(ierr);
+    }
     ierr = MatCreateSubMatrix(B,rows,rows,MAT_INITIAL_MATRIX,&perm);CHKERRQ(ierr);
     ierr = MatDestroy(&B);CHKERRQ(ierr);
     B = perm;
+    if (!qr) {
+      ierr = MatNorm(B,NORM_FROBENIUS,norm);CHKERRQ(ierr);
+      ierr = MatSetOption(B,MAT_NEW_NONZERO_ALLOCATION_ERR,PETSC_FALSE);CHKERRQ(ierr);
+      ierr = MatSetOption(B,MAT_SYMMETRIC,PETSC_TRUE);CHKERRQ(ierr);
+      ierr = MatShift(B,*norm * 1.0e-10);CHKERRQ(ierr);
+    }
     ierr = MatGetOwnershipRange(A,&m,&n);CHKERRQ(ierr);
     ierr = ISCreateStride(PETSC_COMM_WORLD,n-m,m,1,&is);CHKERRQ(ierr);
     ierr = MatCreateSubMatrix(A,is,rows,MAT_INITIAL_MATRIX,&perm);CHKERRQ(ierr);
@@ -74,19 +89,15 @@ int main(int argc,char **args)
     A = perm;
     // end partitioning phase
     // begin setup phase (section 4.1.2)
-    ierr = MatNorm(B,NORM_FROBENIUS,norm);CHKERRQ(ierr);
-    ierr = MatSetOption(B,MAT_NEW_NONZERO_ALLOCATION_ERR,PETSC_FALSE);CHKERRQ(ierr);
-    ierr = MatSetOption(B,MAT_SYMMETRIC,PETSC_TRUE);CHKERRQ(ierr);
-    ierr = MatShift(B,*norm * 1.0e-10);CHKERRQ(ierr);
     ierr = PetscObjectTypeCompare((PetscObject)ksp,KSPLSQR,&normal);CHKERRQ(ierr);
     normal = (PetscBool)!normal;
-    if (normal) {
+    if (normal || qr) {
       ierr = MatCreateNormal(A,&C);CHKERRQ(ierr);
     }
-    ierr = KSPSetOperators(ksp,normal?C:A,B);CHKERRQ(ierr);
+    ierr = KSPSetOperators(ksp,normal?C:A,qr?C:B);CHKERRQ(ierr);
     ierr = PetscObjectTypeCompare((PetscObject)pc,PCHPDDM,&flg);CHKERRQ(ierr);
     if (flg) {
-      ierr = MatGetOwnershipRange(B,&m,&n);CHKERRQ(ierr);
+      ierr = MatGetOwnershipRangeColumn(A,&m,&n);CHKERRQ(ierr);
       ierr = ISCreateStride(PETSC_COMM_SELF,n-m,m,1,&cols);CHKERRQ(ierr);
       ierr = MatGetSize(A,&m,NULL);CHKERRQ(ierr);
       ierr = ISCreateStride(PETSC_COMM_SELF,m,0,1,&rows);CHKERRQ(ierr);
@@ -97,13 +108,18 @@ int main(int argc,char **args)
       ierr = MatIncreaseOverlap(B,1,&cols,1);CHKERRQ(ierr);
       ierr = MatCreateSubMatrices(A,1,&rows,&cols,MAT_INITIAL_MATRIX,&Neumann);CHKERRQ(ierr);
       ierr = ISDestroy(&rows);CHKERRQ(ierr);
+      ierr = MatSetOption(*Neumann,MAT_NEW_NONZERO_ALLOCATION_ERR,PETSC_FALSE);CHKERRQ(ierr);
       ierr = MatZeroRowsIS(*Neumann,is,0.0,NULL,NULL);CHKERRQ(ierr);
       ierr = ISDestroy(&is);CHKERRQ(ierr);
-      ierr = MatTransposeMatMult(*Neumann,*Neumann,MAT_INITIAL_MATRIX,PETSC_DEFAULT,&aux);CHKERRQ(ierr);
+      if (!qr) {
+        ierr = MatTransposeMatMult(*Neumann,*Neumann,MAT_INITIAL_MATRIX,PETSC_DEFAULT,&aux);CHKERRQ(ierr);
+        ierr = MatNorm(aux,NORM_FROBENIUS,norm);CHKERRQ(ierr);
+        ierr = MatSetOption(aux,MAT_NEW_NONZERO_ALLOCATION_ERR,PETSC_FALSE);CHKERRQ(ierr);
+        ierr = MatShift(aux,*norm * 1.0e-8);CHKERRQ(ierr);
+      } else {
+        ierr = MatCreateNormal(Neumann[0],&aux);CHKERRQ(ierr);
+      }
       ierr = MatDestroySubMatrices(1,&Neumann);CHKERRQ(ierr);
-      ierr = MatNorm(aux,NORM_FROBENIUS,norm);CHKERRQ(ierr);
-      ierr = MatSetOption(aux,MAT_NEW_NONZERO_ALLOCATION_ERR,PETSC_FALSE);CHKERRQ(ierr);
-      ierr = MatShift(aux,*norm * 1.0e-8);CHKERRQ(ierr);
       ierr = PCHPDDMSetAuxiliaryMat(pc,cols,aux,NULL,NULL);CHKERRQ(ierr);
       ierr = PCHPDDMHasNeumannMat(pc,PETSC_TRUE);CHKERRQ(ierr);
       ierr = ISDestroy(&cols);CHKERRQ(ierr);

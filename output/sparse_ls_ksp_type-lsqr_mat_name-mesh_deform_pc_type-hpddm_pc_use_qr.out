@@ -1,0 +1,128 @@
+  0 KSP resid norm 2.793108625211e+02
+  1 KSP resid norm 2.741426296850e+02 normal eq resid norm 1.773876555738e+01 matrix norm 1.436464461053e+02
+  2 KSP resid norm 2.738379512334e+02 normal eq resid norm 3.302948493341e+00 matrix norm 1.436464461053e+02
+  3 KSP resid norm 2.738307525409e+02 normal eq resid norm 2.389103090333e-01 matrix norm 1.436464461053e+02
+  4 KSP resid norm 2.738306820904e+02 normal eq resid norm 6.685891502005e-02 matrix norm 1.436464461053e+02
+  5 KSP resid norm 2.738306779228e+02 normal eq resid norm 2.180056438306e-02 matrix norm 1.436464461053e+02
+  6 KSP resid norm 2.738306773298e+02 normal eq resid norm 7.237723903759e-03 matrix norm 1.436464461053e+02
+  7 KSP resid norm 2.738306772789e+02 normal eq resid norm 2.160763722483e-03 matrix norm 1.436464461053e+02
+  8 KSP resid norm 2.738306772738e+02 normal eq resid norm 6.250414587166e-04 matrix norm 1.436464461053e+02
+  9 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.818933862211e-04 matrix norm 1.436464461053e+02
+Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 9
+KSP Object: 4 MPI processes
+  type: lsqr
+    standard error not computed
+    using exact matrix norm
+  maximum iterations=1000, initial guess is zero
+  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  left preconditioning
+  using UNPRECONDITIONED norm type for convergence test
+PC Object: 4 MPI processes
+  type: hpddm
+  levels: 2
+  Neumann matrix attached? TRUE
+  coarse correction: balanced
+  on process #0, value (+ threshold if available) for selecting deflation vectors: 20
+  grid and operator complexities: 1.00852 4000.
+  KSP Object: (pc_hpddm_levels_1_) 4 MPI processes
+    type: preonly
+    maximum iterations=10000, initial guess is zero
+    tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+    left preconditioning
+    using NONE norm type for convergence test
+  PC Object: (pc_hpddm_levels_1_) 4 MPI processes
+    type: shell
+      no name
+    linear system matrix followed by preconditioner matrix:
+    Mat Object: 4 MPI processes
+      type: mpiaij
+      rows=234023, cols=9393
+      total: nonzeros=853829, allocated nonzeros=853829
+      total number of mallocs used during MatSetValues calls=0
+        using I-node (on process 0) routines: found 14752 nodes, limit used is 5
+    Mat Object: 4 MPI processes
+      type: normal
+      rows=9393, cols=9393
+  PC Object: (pc_hpddm_levels_1_) 4 MPI processes
+    type: asm
+      total subdomain blocks = 4, user-defined overlap
+      restriction/interpolation type - BASIC
+      Local solver information for first block is in the following KSP and PC objects on rank 0:
+      Use -pc_hpddm_levels_1_ksp_view ::ascii_info_detail to display information for all blocks
+    KSP Object: (pc_hpddm_levels_1_sub_) 1 MPI processes
+      type: preonly
+      maximum iterations=10000, initial guess is zero
+      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+      left preconditioning
+      using NONE norm type for convergence test
+    PC Object: (pc_hpddm_levels_1_sub_) 1 MPI processes
+      type: qr
+        out-of-place factorization
+        tolerance for zero pivot 2.22045e-14
+        matrix ordering: external
+        factor fill ratio given 0., needed 0.
+          Factored matrix follows:
+            Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI processes
+              type: spqr
+              rows=2617, cols=2617
+              package used to perform factorization: spqr
+              total: nonzeros=173597, allocated nonzeros=173597
+      linear system matrix = precond matrix:
+      Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI processes
+        type: normal
+        rows=2617, cols=2617
+    linear system matrix followed by preconditioner matrix:
+    Mat Object: 4 MPI processes
+      type: mpiaij
+      rows=234023, cols=9393
+      total: nonzeros=853829, allocated nonzeros=853829
+      total number of mallocs used during MatSetValues calls=0
+        using I-node (on process 0) routines: found 14752 nodes, limit used is 5
+    Mat Object: 4 MPI processes
+      type: normal
+      rows=9393, cols=9393
+    KSP Object: (pc_hpddm_coarse_) 1 MPI processes
+      type: preonly
+      maximum iterations=10000, initial guess is zero
+      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+      left preconditioning
+      using NONE norm type for convergence test
+    PC Object: (pc_hpddm_coarse_) 1 MPI processes
+      type: cholesky
+        out-of-place factorization
+        tolerance for zero pivot 2.22045e-14
+        matrix ordering: natural
+        factor fill ratio given 5., needed 1.1
+          Factored matrix follows:
+            Mat Object: 1 MPI processes
+              type: seqsbaij
+              rows=80, cols=80, bs=20
+              package used to perform factorization: petsc
+              total: nonzeros=4400, allocated nonzeros=4400
+                  block size is 20
+      linear system matrix = precond matrix:
+      Mat Object: (pc_hpddm_coarse_) 1 MPI processes
+        type: seqsbaij
+        rows=80, cols=80, bs=20
+        total: nonzeros=4000, allocated nonzeros=4000
+        total number of mallocs used during MatSetValues calls=0
+            block size is 20
+  linear system matrix followed by preconditioner matrix:
+  Mat Object: 4 MPI processes
+    type: mpiaij
+    rows=234023, cols=9393
+    total: nonzeros=853829, allocated nonzeros=853829
+    total number of mallocs used during MatSetValues calls=0
+      using I-node (on process 0) routines: found 14752 nodes, limit used is 5
+  Mat Object: 4 MPI processes
+    type: normal
+    rows=9393, cols=9393
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000118 / 273.830677 = 0.000000
+WARNING! There are options you set that were not used!
+WARNING! could be spelling mistake, etc!
+There are 5 unused database options. They are:
+Option left: name:-mg_coarse_pc_type value: redundant
+Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-pc_asm_type value: basic
+Option left: name:-pc_hypre_boomeramg_print_statistics value: 1
+Option left: name:-sub_pc_type value: cholesky
