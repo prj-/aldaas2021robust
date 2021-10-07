@@ -25,6 +25,7 @@
   PC                             pc
   KSPType                        ktype
   PCType                         ptype
+  PCHPDDMCoarseCorrectionType    ctype
   IS                             is,rows,cols(1)
   PetscMPIInt                    rank
   PetscReal                      norm(2)
@@ -111,6 +112,12 @@
       call MatShift(aux,norm(1) * 1.0e-8,ierr);CHKERRA(ierr)
       call PCHPDDMSetAuxiliaryMat(pc,cols(1),aux,PETSC_NULL_FUNCTION,PETSC_NULL_INTEGER,ierr);CHKERRA(ierr)
       call PCHPDDMHasNeumannMat(pc,PETSC_TRUE,ierr);CHKERRA(ierr)
+      if (.not. normal) then
+        call PCHPDDMGetCoarseCorrectionType(pc,ctype,ierr);CHKERRA(ierr)
+        if (ctype == PC_HPDDM_COARSE_CORRECTION_DEFLATED) then
+          call PCHPDDMSetCoarseCorrectionType(pc,PC_HPDDM_COARSE_CORRECTION_BALANCED,ierr);CHKERRA(ierr)
+        endif
+      endif
       call ISDestroy(cols(1),ierr);CHKERRA(ierr)
       call MatDestroy(aux,ierr);CHKERRA(ierr)
     endif

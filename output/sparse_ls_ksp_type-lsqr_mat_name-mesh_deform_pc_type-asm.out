@@ -28,27 +28,27 @@ PC Object: 4 MPI processes
     restriction/interpolation type - BASIC
     Local solver information for first block is in the following KSP and PC objects on rank 0:
     Use -ksp_view ::ascii_info_detail to display information for all blocks
-  KSP Object: (sub_) 1 MPI processes
+  KSP Object: (sub_) 1 MPI process
     type: preonly
     maximum iterations=10000, initial guess is zero
     tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
     left preconditioning
     using NONE norm type for convergence test
-  PC Object: (sub_) 1 MPI processes
+  PC Object: (sub_) 1 MPI process
     type: cholesky
       out-of-place factorization
       tolerance for zero pivot 2.22045e-14
       matrix ordering: nd
       factor fill ratio given 5., needed 8.22791
         Factored matrix follows:
-          Mat Object: 1 MPI processes
+          Mat Object: 1 MPI process
             type: seqsbaij
             rows=2617, cols=2617
             package used to perform factorization: petsc
             total: nonzeros=141084, allocated nonzeros=141084
                 block size is 1
     linear system matrix = precond matrix:
-    Mat Object: (sub_) 1 MPI processes
+    Mat Object: (sub_) 1 MPI process
       type: seqaij
       rows=2617, cols=2617
       total: nonzeros=31677, allocated nonzeros=31677
@@ -70,10 +70,9 @@ PC Object: 4 MPI processes
 ||A^T(Ax-b)|| / ||Ax-b|| = 0.000120 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
-There are 10 unused database options. They are:
+There are 9 unused database options. They are:
 Option left: name:-mg_coarse_pc_type value: redundant
 Option left: name:-mg_coarse_redundant_pc_type value: cholesky
-Option left: name:-pc_hpddm_coarse_correction value: balanced
 Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
 Option left: name:-pc_hpddm_define_subdomains (no value)
 Option left: name:-pc_hpddm_levels_1_eps_nev value: 20

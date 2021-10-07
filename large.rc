@@ -14,7 +14,6 @@
 -pc_hpddm_levels_1_eps_nev 300
 -pc_hpddm_levels_1_eps_threshold 0.6
 -pc_hpddm_levels_1_eps_gen_non_hermitian
--pc_hpddm_coarse_correction balanced
 -pc_hpddm_coarse_pc_type cholesky
 -pc_hpddm_define_subdomains
 -pc_hpddm_coarse_p 4

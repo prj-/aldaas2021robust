@@ -137,11 +137,10 @@ PC Object: 4 MPI processes
 ||A^T(Ax-b)|| / ||Ax-b|| = 0.000133 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
-There are 11 unused database options. They are:
+There are 10 unused database options. They are:
 Option left: name:-mg_coarse_pc_type value: redundant
 Option left: name:-mg_coarse_redundant_pc_type value: cholesky
 Option left: name:-pc_asm_type value: basic
-Option left: name:-pc_hpddm_coarse_correction value: balanced
 Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
 Option left: name:-pc_hpddm_define_subdomains (no value)
 Option left: name:-pc_hpddm_levels_1_eps_nev value: 20

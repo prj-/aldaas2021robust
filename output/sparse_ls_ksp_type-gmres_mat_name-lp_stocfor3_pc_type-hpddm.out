@@ -25,7 +25,8 @@ PC Object: 4 MPI processes
   type: hpddm
   levels: 2
   Neumann matrix attached? TRUE
-  coarse correction: deflated
+  shared subdomain KSP between SLEPc and PETSc? TRUE
+  coarse correction: DEFLATED
   on process #0, value (+ threshold if available) for selecting deflation vectors: 20
   grid and operator complexities: 1.0048 1.01791
   KSP Object: (pc_hpddm_levels_1_) 4 MPI processes
@@ -53,27 +54,27 @@ PC Object: 4 MPI processes
       restriction/interpolation type - RESTRICT
       Local solver information for first block is in the following KSP and PC objects on rank 0:
       Use -pc_hpddm_levels_1_ksp_view ::ascii_info_detail to display information for all blocks
-    KSP Object: (pc_hpddm_levels_1_sub_) 1 MPI processes
+    KSP Object: (pc_hpddm_levels_1_sub_) 1 MPI process
       type: preonly
       maximum iterations=10000, initial guess is zero
       tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
       left preconditioning
       using NONE norm type for convergence test
-    PC Object: (pc_hpddm_levels_1_sub_) 1 MPI processes
+    PC Object: (pc_hpddm_levels_1_sub_) 1 MPI process
       type: cholesky
         out-of-place factorization
         tolerance for zero pivot 2.22045e-14
         matrix ordering: nd
         factor fill ratio given 5., needed 3.30375
           Factored matrix follows:
-            Mat Object: 1 MPI processes
+            Mat Object: 1 MPI process
               type: seqsbaij
               rows=4297, cols=4297
               package used to perform factorization: petsc
               total: nonzeros=103024, allocated nonzeros=103024
                   block size is 1
       linear system matrix = precond matrix:
-      Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI processes
+      Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
         type: seqaij
         rows=4297, cols=4297
         total: nonzeros=58071, allocated nonzeros=58071
@@ -89,27 +90,27 @@ PC Object: 4 MPI processes
       total: nonzeros=223395, allocated nonzeros=223395
       total number of mallocs used during MatSetValues calls=0
         not using I-node (on process 0) routines
-    KSP Object: (pc_hpddm_coarse_) 1 MPI processes
+    KSP Object: (pc_hpddm_coarse_) 1 MPI process
       type: preonly
       maximum iterations=10000, initial guess is zero
       tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
       left preconditioning
       using NONE norm type for convergence test
-    PC Object: (pc_hpddm_coarse_) 1 MPI processes
+    PC Object: (pc_hpddm_coarse_) 1 MPI process
       type: cholesky
         out-of-place factorization
         tolerance for zero pivot 2.22045e-14
         matrix ordering: natural
         factor fill ratio given 5., needed 1.1
           Factored matrix follows:
-            Mat Object: 1 MPI processes
+            Mat Object: 1 MPI process
               type: seqsbaij
               rows=80, cols=80, bs=20
               package used to perform factorization: petsc
               total: nonzeros=4400, allocated nonzeros=4400
                   block size is 20
       linear system matrix = precond matrix:
-      Mat Object: (pc_hpddm_coarse_) 1 MPI processes
+      Mat Object: (pc_hpddm_coarse_) 1 MPI process
         type: seqsbaij
         rows=80, cols=80, bs=20
         total: nonzeros=4000, allocated nonzeros=4000

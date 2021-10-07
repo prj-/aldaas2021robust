@@ -44,12 +44,10 @@ else:
   mpart.apply(isp)
   rows = PETSc.IS()
   rows = isp.buildTwoSided()
-  perm = B.createSubMatrix(rows,rows)
-  B = perm
+  B = B.createSubMatrix(rows,rows)
   (m,n) = A.getOwnershipRange()
   isp = PETSc.IS().createStride(n-m,m,1,PETSc.COMM_WORLD)
-  perm = A.createSubMatrix(isp,rows)
-  A = perm
+  A = A.createSubMatrix(isp,rows)
   for obj in [mpart,isp,rows]:
     obj.destroy()
   # end partitioning phase
@@ -79,6 +77,10 @@ else:
     aux.shift(aux.norm() * 1.0e-8)
     pc.setHPDDMAuxiliaryMat(cols,aux)
     pc.setHPDDMHasNeumannMat(True)
+    if not normal:
+      correction_type = pc.getHPDDMCoarseCorrectionType()
+      if correction_type == PETSc.PC.HPDDMCoarseCorrectionType.DEFLATED:
+        pc.setHPDDMCoarseCorrectionType(PETSc.PC.HPDDMCoarseCorrectionType.BALANCED)
   # end setup phase
 # begin solution phase (section 4.1.3)
 (x,b) = A.createVecs()
