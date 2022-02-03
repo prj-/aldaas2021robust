@@ -4,14 +4,16 @@
 
 <p align="center"><img src="https://github.com/prj-/aldaas2021robust/raw/main/header.png" height="300"></p>
 
-The code available in this repository can reproduce the results from the following [paper](https://arxiv.org/abs/2107.09006).
+The code available in this repository can reproduce the results from the following [paper](https://epubs.siam.org/doi/abs/10.1137/21M1434891).
 ```
 @article{aldaas2021robust,
     Author = {Al Daas, Hussam and Jolivet, Pierre and Scott, Jennifer A.},
     Title = {A Robust Algebraic Domain Decomposition Preconditioner for Sparse Normal Equations},
-    Year = {2021},
+    Year = {2022},
     Journal = {SIAM Journal on Scientific Computing},
-    Pages = {submitted for publication},
+    Pages = {A1047--A1068},
+    Volume = {44},
+    Issue = {3},
     Url = {https://github.com/prj-/aldaas2021robust}
 }
 ```
