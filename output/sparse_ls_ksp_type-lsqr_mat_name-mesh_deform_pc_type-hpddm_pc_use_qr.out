@@ -40,7 +40,7 @@ PC Object: 4 MPI processes
       rows=234023, cols=9393
       total: nonzeros=853829, allocated nonzeros=853829
       total number of mallocs used during MatSetValues calls=0
-        using I-node (on process 0) routines: found 14752 nodes, limit used is 5
+        using I-node (on process 0) routines: found 14805 nodes, limit used is 5
     Mat Object: 4 MPI processes
       type: normal
       rows=9393, cols=9393
@@ -65,20 +65,20 @@ PC Object: 4 MPI processes
           Factored matrix follows:
             Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
               type: spqr
-              rows=2617, cols=2617
+              rows=2631, cols=2631
               package used to perform factorization: spqr
-              total: nonzeros=173597, allocated nonzeros=173597
+              total: nonzeros=179433, allocated nonzeros=179433
       linear system matrix = precond matrix:
       Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
         type: normal
-        rows=2617, cols=2617
+        rows=2631, cols=2631
     linear system matrix followed by preconditioner matrix:
     Mat Object: 4 MPI processes
       type: mpiaij
       rows=234023, cols=9393
       total: nonzeros=853829, allocated nonzeros=853829
       total number of mallocs used during MatSetValues calls=0
-        using I-node (on process 0) routines: found 14752 nodes, limit used is 5
+        using I-node (on process 0) routines: found 14805 nodes, limit used is 5
     Mat Object: 4 MPI processes
       type: normal
       rows=9393, cols=9393
@@ -95,7 +95,7 @@ PC Object: 4 MPI processes
         matrix ordering: natural
         factor fill ratio given 5., needed 1.1
           Factored matrix follows:
-            Mat Object: 1 MPI process
+            Mat Object: (pc_hpddm_coarse_) 1 MPI process
               type: seqsbaij
               rows=80, cols=80, bs=20
               package used to perform factorization: petsc
@@ -114,16 +114,17 @@ PC Object: 4 MPI processes
     rows=234023, cols=9393
     total: nonzeros=853829, allocated nonzeros=853829
     total number of mallocs used during MatSetValues calls=0
-      using I-node (on process 0) routines: found 14752 nodes, limit used is 5
+      using I-node (on process 0) routines: found 14805 nodes, limit used is 5
   Mat Object: 4 MPI processes
     type: normal
     rows=9393, cols=9393
-||A^T(Ax-b)|| / ||Ax-b|| = 0.000118 / 273.830677 = 0.000000
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000077 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
-There are 5 unused database options. They are:
+There are 6 unused database options. They are:
 Option left: name:-mg_coarse_pc_type value: redundant
 Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-mg_levels_pc_type value: sor
 Option left: name:-pc_asm_type value: basic
 Option left: name:-pc_hypre_boomeramg_print_statistics value: 1
 Option left: name:-sub_pc_type value: cholesky

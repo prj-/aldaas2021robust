@@ -20,7 +20,7 @@ The code available in this repository can reproduce the results from the followi
 
 ## Getting started
 ### Dependencies
-Make sure you have access to a recent [PETSc](https://petsc.org/) installation (version 3.16.0 or above), configured with the options `--download-slepc --download-hpddm`, using 32 bit indices, double-precision real-valued scalars (`--with-64-bit-indices=0 --with-precision=double --with-scalar-type=real`).  
+Make sure you have access to a recent [PETSc](https://petsc.org/) installation (version 3.18.0 or above), configured with the options `--download-slepc --download-hpddm`, using 32-bit indices, double-precision real-valued scalars (`--with-64-bit-indices=0 --with-precision=double --with-scalar-type=real`).  
 Then, after setting the appropriate environment variable `${PETSC_DIR}` and `${PETSC_ARCH}` compile the single C source file from the repository with the following command.
 ```
 $ make sparse_ls

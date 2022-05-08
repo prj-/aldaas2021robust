@@ -97,13 +97,14 @@ PC Object: 4 MPI processes
       Measure type        local
       Coarsen type        Falgout
       Interpolation type  classical
+      SpGEMM type         cusparse
   linear system matrix followed by preconditioner matrix:
   Mat Object: 4 MPI processes
     type: mpiaij
     rows=23541, cols=16675
     total: nonzeros=72721, allocated nonzeros=72721
     total number of mallocs used during MatSetValues calls=0
-      using I-node (on process 0) routines: found 2760 nodes, limit used is 5
+      using I-node (on process 0) routines: found 2748 nodes, limit used is 5
   Mat Object: 4 MPI processes
     type: mpiaij
     rows=16675, cols=16675
@@ -113,9 +114,10 @@ PC Object: 4 MPI processes
 ||A^T(Ax-b)|| / ||Ax-b|| = 3486.075669 / 71.099417 = 49.031002
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
-There are 10 unused database options. They are:
+There are 11 unused database options. They are:
 Option left: name:-mg_coarse_pc_type value: redundant
 Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-mg_levels_pc_type value: sor
 Option left: name:-pc_asm_type value: basic
 Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
 Option left: name:-pc_hpddm_define_subdomains (no value)

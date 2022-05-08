@@ -11,7 +11,7 @@
    If you use this script, you are kindly asked to cite the following article:
 
    "A Robust Algebraic Domain Decomposition Preconditioner for Sparse Normal Equations",
-   H. Al Daas, P. Jolivet, and J. A. Scott (2021).
+   H. Al Daas, P. Jolivet, and J. A. Scott (2022).
  */
 
 #include <petsc.h>

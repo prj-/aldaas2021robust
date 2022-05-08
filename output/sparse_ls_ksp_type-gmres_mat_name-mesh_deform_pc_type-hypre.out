@@ -28,31 +28,31 @@ Operator Matrix Information:
 lev    rows  entries sparse   min  max     avg      min         max
 ======================================================================
   0    9393   117117  0.001     7   23    12.5   2.558e-07   8.000e+00
-  1    4906    96830  0.004     7   30    19.7  -7.774e-01   9.491e+00
-  2    1841    33027  0.010     1   37    17.9  -8.043e-01   5.116e+00
-  3     590     9594  0.028     1   40    16.3  -9.710e-01   3.747e+00
-  4     202     2772  0.068     1   31    13.7  -9.542e-01   1.927e+00
-  5      66      594  0.136     1   18     9.0  -9.015e-01   1.927e+00
-  6      23      131  0.248     1   10     5.7   7.211e-02   1.447e+00
-  7       8       34  0.531     1    6     4.2   8.723e-02   8.469e-01
+  1    4904    96898  0.004     8   30    19.8  -1.588e-01   9.491e+00
+  2    1823    32583  0.010     1   36    17.9  -2.082e-01   5.061e+00
+  3     594     9504  0.027     1   36    16.0  -2.386e-01   3.940e+00
+  4     199     2655  0.067     1   33    13.3  -7.239e-02   1.360e+00
+  5      68      686  0.148     1   20    10.1   3.996e-03   4.181e-01
+  6      24      160  0.278     1   12     6.7   2.383e-02   2.475e-01
+  7       8       34  0.531     3    5     4.2   1.070e-01   3.037e-01
 
 
 Interpolation Matrix Information:
                     entries/row        min        max            row sums
 lev  rows x cols  min  max  avgW     weight      weight       min         max
 ================================================================================
-  0  9393 x 4906    0    6   3.0   1.168e-02   1.000e+00   0.000e+00   1.038e+00
-  1  4906 x 1841    0    6   1.4   1.342e-02   1.194e+00   0.000e+00   1.357e+00
-  2  1841 x 590     0    6   1.2   1.551e-02   1.273e+00   0.000e+00   1.273e+00
-  3   590 x 202     0    5   1.3   2.617e-02   1.076e+00   0.000e+00   1.093e+00
-  4   202 x 66      0    4   1.3   3.940e-02   1.001e+00   0.000e+00   1.032e+00
-  5    66 x 23      0    3   1.0   5.544e-02   9.505e-01   0.000e+00   1.001e+00
-  6    23 x 8       0    3   0.9   1.640e-02   5.431e-01   0.000e+00   1.000e+00
+  0  9393 x 4904    0    6   3.0   1.168e-02   1.000e+00   0.000e+00   1.028e+00
+  1  4904 x 1823    0    7   1.4   1.342e-02   1.203e+00   0.000e+00   1.342e+00
+  2  1823 x 594     0    5   1.2   1.469e-02   1.168e+00   0.000e+00   1.181e+00
+  3   594 x 199     0    5   1.3   1.628e-02   1.013e+00   0.000e+00   1.146e+00
+  4   199 x 68      0    5   1.3   2.689e-02   9.996e-01   0.000e+00   1.158e+00
+  5    68 x 24      0    4   1.0   2.867e-02   9.991e-01   0.000e+00   1.000e+00
+  6    24 x 8       0    2   0.8   3.365e-02   9.254e-01   0.000e+00   1.000e+00
 
 
-     Complexity:    grid = 1.812946
-                operator = 2.220848
-                memory = 2.458541
+     Complexity:    grid = 1.811242
+                operator = 2.216903
+                memory = 2.454486
 
 
 
@@ -73,24 +73,25 @@ BoomerAMG SOLVER PARAMETERS:
                              Coarsest grid:   0
 
   0 KSP Residual norm 8.279698482740e+01 
-  1 KSP Residual norm 1.059102796595e+00 
-  2 KSP Residual norm 4.590428793287e-01 
-  3 KSP Residual norm 3.843846001116e-01 
-  4 KSP Residual norm 3.640677242750e-01 
-  5 KSP Residual norm 3.305066212802e-01 
-  6 KSP Residual norm 2.506217027383e-01 
-  7 KSP Residual norm 7.335692749326e-02 
-  8 KSP Residual norm 2.487241651248e-02 
-  9 KSP Residual norm 1.262614989109e-02 
- 10 KSP Residual norm 4.749458191335e-03 
- 11 KSP Residual norm 1.485836495095e-03 
- 12 KSP Residual norm 4.139533251533e-04 
- 13 KSP Residual norm 9.812185925979e-05 
- 14 KSP Residual norm 2.648538467082e-05 
- 15 KSP Residual norm 6.449648076952e-06 
- 16 KSP Residual norm 1.401073131829e-06 
- 17 KSP Residual norm 3.678792356772e-07 
-Linear solve converged due to CONVERGED_RTOL iterations 17
+  1 KSP Residual norm 1.014335814345e+00 
+  2 KSP Residual norm 4.614075228209e-01 
+  3 KSP Residual norm 3.754737572874e-01 
+  4 KSP Residual norm 3.608409149663e-01 
+  5 KSP Residual norm 3.396120790670e-01 
+  6 KSP Residual norm 2.706478455238e-01 
+  7 KSP Residual norm 1.068544884721e-01 
+  8 KSP Residual norm 4.964972753274e-02 
+  9 KSP Residual norm 1.775397089343e-02 
+ 10 KSP Residual norm 6.519332702091e-03 
+ 11 KSP Residual norm 3.105541831151e-03 
+ 12 KSP Residual norm 8.933563569919e-04 
+ 13 KSP Residual norm 2.302902803603e-04 
+ 14 KSP Residual norm 6.093533833656e-05 
+ 15 KSP Residual norm 1.437004086294e-05 
+ 16 KSP Residual norm 3.288524865959e-06 
+ 17 KSP Residual norm 9.972870688413e-07 
+ 18 KSP Residual norm 2.658171850094e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 18
 KSP Object: 4 MPI processes
   type: gmres
     restart=100, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -125,6 +126,7 @@ PC Object: 4 MPI processes
       Measure type        local
       Coarsen type        Falgout
       Interpolation type  classical
+      SpGEMM type         cusparse
   linear system matrix followed by preconditioner matrix:
   Mat Object: 4 MPI processes
     type: normal
@@ -135,12 +137,13 @@ PC Object: 4 MPI processes
     total: nonzeros=117117, allocated nonzeros=117117
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 3.678793231051008e-07 / 273.83067727335225 = 1.343455476823235e-09
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000000 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
-There are 8 unused database options. They are:
+There are 9 unused database options. They are:
 Option left: name:-mg_coarse_pc_type value: redundant
 Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-mg_levels_pc_type value: sor
 Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
 Option left: name:-pc_hpddm_define_subdomains (no value)
 Option left: name:-pc_hpddm_levels_1_eps_nev value: 20

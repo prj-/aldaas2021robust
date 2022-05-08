@@ -1,41 +1,42 @@
   0 KSP resid norm 8.836103988221e+01
-  1 KSP resid norm 6.445967180888e+01 normal eq resid norm 2.237410050149e+01 matrix norm 3.062907705646e+04
-  2 KSP resid norm 6.298754207375e+01 normal eq resid norm 1.249275105068e+01 matrix norm 3.062907705646e+04
-  3 KSP resid norm 6.054804765651e+01 normal eq resid norm 1.691513624727e+01 matrix norm 3.062907705646e+04
-  4 KSP resid norm 5.839186317892e+01 normal eq resid norm 1.319045631061e+01 matrix norm 3.062907705646e+04
-  5 KSP resid norm 5.772401895995e+01 normal eq resid norm 6.696763670345e+00 matrix norm 3.062907705646e+04
-  6 KSP resid norm 5.654381971495e+01 normal eq resid norm 1.001286955354e+01 matrix norm 3.062907705646e+04
-  7 KSP resid norm 5.564997924583e+01 normal eq resid norm 1.181750640531e+01 matrix norm 3.062907705646e+04
-  8 KSP resid norm 5.436445233847e+01 normal eq resid norm 1.067684804821e+01 matrix norm 3.062907705646e+04
-  9 KSP resid norm 5.314715075749e+01 normal eq resid norm 9.138513367840e+00 matrix norm 3.062907705646e+04
- 10 KSP resid norm 5.260950648424e+01 normal eq resid norm 9.966945459614e+00 matrix norm 3.062907705646e+04
- 11 KSP resid norm 4.957035848478e+01 normal eq resid norm 1.487110752979e+01 matrix norm 3.062907705646e+04
- 12 KSP resid norm 4.619630097751e+01 normal eq resid norm 1.257960712867e+01 matrix norm 3.062907705646e+04
- 13 KSP resid norm 4.461782955673e+01 normal eq resid norm 1.342461714824e+01 matrix norm 3.062907705646e+04
- 14 KSP resid norm 4.333407688422e+01 normal eq resid norm 7.976720492756e+00 matrix norm 3.062907705646e+04
- 15 KSP resid norm 4.159041164751e+01 normal eq resid norm 1.050180574807e+01 matrix norm 3.062907705646e+04
- 16 KSP resid norm 4.088031509671e+01 normal eq resid norm 7.353608883375e+00 matrix norm 3.062907705646e+04
- 17 KSP resid norm 4.036708527627e+01 normal eq resid norm 3.116877250444e+00 matrix norm 3.062907705646e+04
- 18 KSP resid norm 4.025692897786e+01 normal eq resid norm 2.538822992337e+00 matrix norm 3.062907705646e+04
- 19 KSP resid norm 4.021920019333e+01 normal eq resid norm 8.883134451992e-01 matrix norm 3.062907705646e+04
- 20 KSP resid norm 4.021191982113e+01 normal eq resid norm 3.779791640467e-01 matrix norm 3.062907705646e+04
- 21 KSP resid norm 4.021035877222e+01 normal eq resid norm 3.293508453272e-01 matrix norm 3.062907705646e+04
- 22 KSP resid norm 4.020957587018e+01 normal eq resid norm 2.327496589317e-01 matrix norm 3.062907705646e+04
- 23 KSP resid norm 4.020873807899e+01 normal eq resid norm 2.081051937669e-01 matrix norm 3.062907705646e+04
- 24 KSP resid norm 4.020833268054e+01 normal eq resid norm 2.218523036384e-01 matrix norm 3.062907705646e+04
- 25 KSP resid norm 4.020756778103e+01 normal eq resid norm 1.887323782794e-01 matrix norm 3.062907705646e+04
- 26 KSP resid norm 4.020564058393e+01 normal eq resid norm 3.696263955012e-01 matrix norm 3.062907705646e+04
- 27 KSP resid norm 4.020442410994e+01 normal eq resid norm 3.646971652732e-01 matrix norm 3.062907705646e+04
- 28 KSP resid norm 4.020280629012e+01 normal eq resid norm 3.393230350760e-01 matrix norm 3.062907705646e+04
- 29 KSP resid norm 4.020061565635e+01 normal eq resid norm 2.108490252283e-01 matrix norm 3.062907705646e+04
- 30 KSP resid norm 4.019972186329e+01 normal eq resid norm 2.267686597619e-01 matrix norm 3.062907705646e+04
- 31 KSP resid norm 4.019933175433e+01 normal eq resid norm 2.226439780933e-01 matrix norm 3.062907705646e+04
- 32 KSP resid norm 4.019814301452e+01 normal eq resid norm 2.447205513593e-01 matrix norm 3.062907705646e+04
- 33 KSP resid norm 4.019724888684e+01 normal eq resid norm 9.517925200948e-02 matrix norm 3.062907705646e+04
- 34 KSP resid norm 4.019714792216e+01 normal eq resid norm 2.559178506937e-02 matrix norm 3.062907705646e+04
- 35 KSP resid norm 4.019714332597e+01 normal eq resid norm 1.785794744158e-02 matrix norm 3.062907705646e+04
- 36 KSP resid norm 4.019714117792e+01 normal eq resid norm 1.126758858002e-02 matrix norm 3.062907705646e+04
-Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 36
+  1 KSP resid norm 6.437005596756e+01 normal eq resid norm 2.229089208848e+01 matrix norm 3.062907705646e+04
+  2 KSP resid norm 6.289447995967e+01 normal eq resid norm 1.262202656261e+01 matrix norm 3.062907705646e+04
+  3 KSP resid norm 6.049214029912e+01 normal eq resid norm 1.682889431046e+01 matrix norm 3.062907705646e+04
+  4 KSP resid norm 5.826303894597e+01 normal eq resid norm 1.326622617653e+01 matrix norm 3.062907705646e+04
+  5 KSP resid norm 5.759601570147e+01 normal eq resid norm 6.693832175729e+00 matrix norm 3.062907705646e+04
+  6 KSP resid norm 5.646713454594e+01 normal eq resid norm 9.742695987715e+00 matrix norm 3.062907705646e+04
+  7 KSP resid norm 5.563954328358e+01 normal eq resid norm 1.130182004702e+01 matrix norm 3.062907705646e+04
+  8 KSP resid norm 5.445433382564e+01 normal eq resid norm 1.048800112405e+01 matrix norm 3.062907705646e+04
+  9 KSP resid norm 5.319452094186e+01 normal eq resid norm 9.400357802269e+00 matrix norm 3.062907705646e+04
+ 10 KSP resid norm 5.255193433156e+01 normal eq resid norm 1.149013685813e+01 matrix norm 3.062907705646e+04
+ 11 KSP resid norm 4.882147311388e+01 normal eq resid norm 1.565885126664e+01 matrix norm 3.062907705646e+04
+ 12 KSP resid norm 4.531771616406e+01 normal eq resid norm 1.120590066010e+01 matrix norm 3.062907705646e+04
+ 13 KSP resid norm 4.366341163109e+01 normal eq resid norm 1.232728486209e+01 matrix norm 3.062907705646e+04
+ 14 KSP resid norm 4.277154531922e+01 normal eq resid norm 7.764736537000e+00 matrix norm 3.062907705646e+04
+ 15 KSP resid norm 4.108547347458e+01 normal eq resid norm 7.841626503404e+00 matrix norm 3.062907705646e+04
+ 16 KSP resid norm 4.062648120683e+01 normal eq resid norm 6.089374721426e+00 matrix norm 3.062907705646e+04
+ 17 KSP resid norm 4.034686527060e+01 normal eq resid norm 2.731130254485e+00 matrix norm 3.062907705646e+04
+ 18 KSP resid norm 4.025154879336e+01 normal eq resid norm 1.317993552518e+00 matrix norm 3.062907705646e+04
+ 19 KSP resid norm 4.023585852713e+01 normal eq resid norm 7.389695744127e-01 matrix norm 3.062907705646e+04
+ 20 KSP resid norm 4.023275413279e+01 normal eq resid norm 4.096373582938e-01 matrix norm 3.062907705646e+04
+ 21 KSP resid norm 4.022993707275e+01 normal eq resid norm 4.256586392699e-01 matrix norm 3.062907705646e+04
+ 22 KSP resid norm 4.022801985302e+01 normal eq resid norm 5.079416438224e-01 matrix norm 3.062907705646e+04
+ 23 KSP resid norm 4.022408808816e+01 normal eq resid norm 3.928434507740e-01 matrix norm 3.062907705646e+04
+ 24 KSP resid norm 4.022070540297e+01 normal eq resid norm 4.192262248093e-01 matrix norm 3.062907705646e+04
+ 25 KSP resid norm 4.021931954350e+01 normal eq resid norm 3.719796943595e-01 matrix norm 3.062907705646e+04
+ 26 KSP resid norm 4.021712409587e+01 normal eq resid norm 3.417514219443e-01 matrix norm 3.062907705646e+04
+ 27 KSP resid norm 4.021567630414e+01 normal eq resid norm 3.820881030253e-01 matrix norm 3.062907705646e+04
+ 28 KSP resid norm 4.021403036597e+01 normal eq resid norm 4.342210530035e-01 matrix norm 3.062907705646e+04
+ 29 KSP resid norm 4.020932904331e+01 normal eq resid norm 3.989357254342e-01 matrix norm 3.062907705646e+04
+ 30 KSP resid norm 4.020461761727e+01 normal eq resid norm 4.869677873318e-01 matrix norm 3.062907705646e+04
+ 31 KSP resid norm 4.020232634371e+01 normal eq resid norm 5.625684778069e-01 matrix norm 3.062907705646e+04
+ 32 KSP resid norm 4.019838209801e+01 normal eq resid norm 3.347268501251e-01 matrix norm 3.062907705646e+04
+ 33 KSP resid norm 4.019724464520e+01 normal eq resid norm 8.844285198427e-02 matrix norm 3.062907705646e+04
+ 34 KSP resid norm 4.019715803940e+01 normal eq resid norm 2.583904723755e-02 matrix norm 3.062907705646e+04
+ 35 KSP resid norm 4.019715229941e+01 normal eq resid norm 1.745192932985e-02 matrix norm 3.062907705646e+04
+ 36 KSP resid norm 4.019715038573e+01 normal eq resid norm 1.263388039218e-02 matrix norm 3.062907705646e+04
+ 37 KSP resid norm 4.019714748337e+01 normal eq resid norm 9.900691467911e-03 matrix norm 3.062907705646e+04
+Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 37
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
@@ -61,19 +62,19 @@ PC Object: 4 MPI processes
       out-of-place factorization
       tolerance for zero pivot 2.22045e-14
       matrix ordering: nd
-      factor fill ratio given 5., needed 3.30375
+      factor fill ratio given 5., needed 3.37836
         Factored matrix follows:
-          Mat Object: 1 MPI process
+          Mat Object: (sub_) 1 MPI process
             type: seqsbaij
-            rows=4297, cols=4297
+            rows=4176, cols=4176
             package used to perform factorization: petsc
-            total: nonzeros=103024, allocated nonzeros=103024
+            total: nonzeros=101246, allocated nonzeros=101246
                 block size is 1
     linear system matrix = precond matrix:
     Mat Object: (sub_) 1 MPI process
       type: seqaij
-      rows=4297, cols=4297
-      total: nonzeros=58071, allocated nonzeros=58071
+      rows=4176, cols=4176
+      total: nonzeros=55762, allocated nonzeros=55762
       total number of mallocs used during MatSetValues calls=0
         not using I-node routines
   linear system matrix followed by preconditioner matrix:
@@ -82,7 +83,7 @@ PC Object: 4 MPI processes
     rows=23541, cols=16675
     total: nonzeros=72721, allocated nonzeros=72721
     total number of mallocs used during MatSetValues calls=0
-      using I-node (on process 0) routines: found 2760 nodes, limit used is 5
+      using I-node (on process 0) routines: found 2748 nodes, limit used is 5
   Mat Object: 4 MPI processes
     type: mpiaij
     rows=16675, cols=16675
@@ -92,9 +93,10 @@ PC Object: 4 MPI processes
 ||A^T(Ax-b)|| / ||Ax-b|| = 1.247332 / 40.197141 = 0.031030
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
-There are 9 unused database options. They are:
+There are 10 unused database options. They are:
 Option left: name:-mg_coarse_pc_type value: redundant
 Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-mg_levels_pc_type value: sor
 Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
 Option left: name:-pc_hpddm_define_subdomains (no value)
 Option left: name:-pc_hpddm_levels_1_eps_nev value: 20

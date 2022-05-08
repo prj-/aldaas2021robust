@@ -28,31 +28,31 @@ Operator Matrix Information:
 lev    rows  entries sparse   min  max     avg      min         max
 ======================================================================
   0    9393   117117  0.001     7   23    12.5   2.558e-07   8.000e+00
-  1    4906    96830  0.004     7   30    19.7  -7.774e-01   9.491e+00
-  2    1841    33027  0.010     1   37    17.9  -8.043e-01   5.116e+00
-  3     590     9594  0.028     1   40    16.3  -9.710e-01   3.747e+00
-  4     202     2772  0.068     1   31    13.7  -9.542e-01   1.927e+00
-  5      66      594  0.136     1   18     9.0  -9.015e-01   1.927e+00
-  6      23      131  0.248     1   10     5.7   7.211e-02   1.447e+00
-  7       8       34  0.531     1    6     4.2   8.723e-02   8.469e-01
+  1    4904    96898  0.004     8   30    19.8  -1.588e-01   9.491e+00
+  2    1823    32583  0.010     1   36    17.9  -2.082e-01   5.061e+00
+  3     594     9504  0.027     1   36    16.0  -2.386e-01   3.940e+00
+  4     199     2655  0.067     1   33    13.3  -7.239e-02   1.360e+00
+  5      68      686  0.148     1   20    10.1   3.996e-03   4.181e-01
+  6      24      160  0.278     1   12     6.7   2.383e-02   2.475e-01
+  7       8       34  0.531     3    5     4.2   1.070e-01   3.037e-01
 
 
 Interpolation Matrix Information:
                     entries/row        min        max            row sums
 lev  rows x cols  min  max  avgW     weight      weight       min         max
 ================================================================================
-  0  9393 x 4906    0    6   3.0   1.168e-02   1.000e+00   0.000e+00   1.038e+00
-  1  4906 x 1841    0    6   1.4   1.342e-02   1.194e+00   0.000e+00   1.357e+00
-  2  1841 x 590     0    6   1.2   1.551e-02   1.273e+00   0.000e+00   1.273e+00
-  3   590 x 202     0    5   1.3   2.617e-02   1.076e+00   0.000e+00   1.093e+00
-  4   202 x 66      0    4   1.3   3.940e-02   1.001e+00   0.000e+00   1.032e+00
-  5    66 x 23      0    3   1.0   5.544e-02   9.505e-01   0.000e+00   1.001e+00
-  6    23 x 8       0    3   0.9   1.640e-02   5.431e-01   0.000e+00   1.000e+00
+  0  9393 x 4904    0    6   3.0   1.168e-02   1.000e+00   0.000e+00   1.028e+00
+  1  4904 x 1823    0    7   1.4   1.342e-02   1.203e+00   0.000e+00   1.342e+00
+  2  1823 x 594     0    5   1.2   1.469e-02   1.168e+00   0.000e+00   1.181e+00
+  3   594 x 199     0    5   1.3   1.628e-02   1.013e+00   0.000e+00   1.146e+00
+  4   199 x 68      0    5   1.3   2.689e-02   9.996e-01   0.000e+00   1.158e+00
+  5    68 x 24      0    4   1.0   2.867e-02   9.991e-01   0.000e+00   1.000e+00
+  6    24 x 8       0    2   0.8   3.365e-02   9.254e-01   0.000e+00   1.000e+00
 
 
-     Complexity:    grid = 1.812946
-                operator = 2.220848
-                memory = 2.458541
+     Complexity:    grid = 1.811242
+                operator = 2.216903
+                memory = 2.454486
 
 
 
@@ -73,20 +73,21 @@ BoomerAMG SOLVER PARAMETERS:
                              Coarsest grid:   0
 
   0 KSP resid norm 2.793108625211e+02
-  1 KSP resid norm 2.738480177385e+02 normal eq resid norm 2.427529392606e+00 matrix norm 1.436464461053e+02
-  2 KSP resid norm 2.738318322217e+02 normal eq resid norm 4.831699181206e-01 matrix norm 1.436464461053e+02
-  3 KSP resid norm 2.738311910949e+02 normal eq resid norm 1.313762090633e-01 matrix norm 1.436464461053e+02
-  4 KSP resid norm 2.738311263407e+02 normal eq resid norm 7.022468526026e-02 matrix norm 1.436464461053e+02
-  5 KSP resid norm 2.738310947883e+02 normal eq resid norm 7.608089335001e-02 matrix norm 1.436464461053e+02
-  6 KSP resid norm 2.738309861077e+02 normal eq resid norm 1.672807836265e-01 matrix norm 1.436464461053e+02
-  7 KSP resid norm 2.738307317056e+02 normal eq resid norm 1.230714954435e-01 matrix norm 1.436464461053e+02
-  8 KSP resid norm 2.738306839353e+02 normal eq resid norm 3.909990437286e-02 matrix norm 1.436464461053e+02
-  9 KSP resid norm 2.738306786351e+02 normal eq resid norm 1.630520323408e-02 matrix norm 1.436464461053e+02
- 10 KSP resid norm 2.738306775422e+02 normal eq resid norm 8.115879606389e-03 matrix norm 1.436464461053e+02
- 11 KSP resid norm 2.738306773016e+02 normal eq resid norm 2.916482592705e-03 matrix norm 1.436464461053e+02
- 12 KSP resid norm 2.738306772755e+02 normal eq resid norm 8.233534321121e-04 matrix norm 1.436464461053e+02
- 13 KSP resid norm 2.738306772735e+02 normal eq resid norm 2.114675361061e-04 matrix norm 1.436464461053e+02
-Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 13
+  1 KSP resid norm 2.738475468186e+02 normal eq resid norm 2.400135964002e+00 matrix norm 1.436464461053e+02
+  2 KSP resid norm 2.738318172685e+02 normal eq resid norm 4.772236775473e-01 matrix norm 1.436464461053e+02
+  3 KSP resid norm 2.738311806754e+02 normal eq resid norm 1.336741032081e-01 matrix norm 1.436464461053e+02
+  4 KSP resid norm 2.738311133528e+02 normal eq resid norm 7.175975868328e-02 matrix norm 1.436464461053e+02
+  5 KSP resid norm 2.738310818605e+02 normal eq resid norm 7.389408569215e-02 matrix norm 1.436464461053e+02
+  6 KSP resid norm 2.738309891065e+02 normal eq resid norm 1.545301693750e-01 matrix norm 1.436464461053e+02
+  7 KSP resid norm 2.738307432426e+02 normal eq resid norm 1.309649977951e-01 matrix norm 1.436464461053e+02
+  8 KSP resid norm 2.738306875513e+02 normal eq resid norm 4.632105362373e-02 matrix norm 1.436464461053e+02
+  9 KSP resid norm 2.738306790515e+02 normal eq resid norm 2.115784739381e-02 matrix norm 1.436464461053e+02
+ 10 KSP resid norm 2.738306775036e+02 normal eq resid norm 7.489113382815e-03 matrix norm 1.436464461053e+02
+ 11 KSP resid norm 2.738306773113e+02 normal eq resid norm 2.932515928266e-03 matrix norm 1.436464461053e+02
+ 12 KSP resid norm 2.738306772801e+02 normal eq resid norm 1.279164620309e-03 matrix norm 1.436464461053e+02
+ 13 KSP resid norm 2.738306772740e+02 normal eq resid norm 4.545492588476e-04 matrix norm 1.436464461053e+02
+ 14 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.262067050337e-04 matrix norm 1.436464461053e+02
+Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 14
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
@@ -121,25 +122,27 @@ PC Object: 4 MPI processes
       Measure type        local
       Coarsen type        Falgout
       Interpolation type  classical
+      SpGEMM type         cusparse
   linear system matrix followed by preconditioner matrix:
   Mat Object: 4 MPI processes
     type: mpiaij
     rows=234023, cols=9393
     total: nonzeros=853829, allocated nonzeros=853829
     total number of mallocs used during MatSetValues calls=0
-      using I-node (on process 0) routines: found 14752 nodes, limit used is 5
+      using I-node (on process 0) routines: found 14805 nodes, limit used is 5
   Mat Object: 4 MPI processes
     type: mpiaij
     rows=9393, cols=9393
     total: nonzeros=117117, allocated nonzeros=117117
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 0.000133 / 273.830677 = 0.000000
+||A^T(Ax-b)|| / ||Ax-b|| = 8.9510945708924e-05 / 273.83067727340097 = 3.268842870353548e-07
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
-There are 10 unused database options. They are:
+There are 11 unused database options. They are:
 Option left: name:-mg_coarse_pc_type value: redundant
 Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-mg_levels_pc_type value: sor
 Option left: name:-pc_asm_type value: basic
 Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
 Option left: name:-pc_hpddm_define_subdomains (no value)

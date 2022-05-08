@@ -25,3 +25,4 @@
 -pc_use_amat false
 -mg_coarse_pc_type redundant
 -mg_coarse_redundant_pc_type cholesky
+-mg_levels_pc_type sor

@@ -1,22 +1,20 @@
   0 KSP Residual norm 8.279698482740e+01 
-  1 KSP Residual norm 5.379101536074e+00 
-  2 KSP Residual norm 7.967589389402e-01 
-  3 KSP Residual norm 3.875104161992e-01 
-  4 KSP Residual norm 1.797226190033e-01 
-  5 KSP Residual norm 8.321269234435e-02 
-  6 KSP Residual norm 3.443355141879e-02 
-  7 KSP Residual norm 1.637187567731e-02 
-  8 KSP Residual norm 5.824263510358e-03 
-  9 KSP Residual norm 1.829785738985e-03 
- 10 KSP Residual norm 9.969795616775e-04 
- 11 KSP Residual norm 2.961205050290e-04 
- 12 KSP Residual norm 9.504076997606e-05 
- 13 KSP Residual norm 3.099488465249e-05 
- 14 KSP Residual norm 1.112454551472e-05 
- 15 KSP Residual norm 3.176392036314e-06 
- 16 KSP Residual norm 1.069378855075e-06 
- 17 KSP Residual norm 2.693018236477e-07 
-Linear solve converged due to CONVERGED_RTOL iterations 17
+  1 KSP Residual norm 4.065569312086e+00 
+  2 KSP Residual norm 1.165311632988e+00 
+  3 KSP Residual norm 5.520596513914e-01 
+  4 KSP Residual norm 1.172294418359e-01 
+  5 KSP Residual norm 4.033203842308e-02 
+  6 KSP Residual norm 1.582520107677e-02 
+  7 KSP Residual norm 7.543579152683e-03 
+  8 KSP Residual norm 1.892893259100e-03 
+  9 KSP Residual norm 5.098805256732e-04 
+ 10 KSP Residual norm 1.135567844071e-04 
+ 11 KSP Residual norm 3.652242744326e-05 
+ 12 KSP Residual norm 8.279969880940e-06 
+ 13 KSP Residual norm 2.391625656356e-06 
+ 14 KSP Residual norm 9.573889596060e-07 
+ 15 KSP Residual norm 3.072045692561e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 15
 KSP Object: 4 MPI processes
   type: gmres
     restart=100, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -42,19 +40,19 @@ PC Object: 4 MPI processes
       out-of-place factorization
       tolerance for zero pivot 2.22045e-14
       matrix ordering: nd
-      factor fill ratio given 5., needed 8.22791
+      factor fill ratio given 5., needed 8.49166
         Factored matrix follows:
-          Mat Object: 1 MPI process
+          Mat Object: (sub_) 1 MPI process
             type: seqsbaij
-            rows=2617, cols=2617
+            rows=2631, cols=2631
             package used to perform factorization: petsc
-            total: nonzeros=141084, allocated nonzeros=141084
+            total: nonzeros=146651, allocated nonzeros=146651
                 block size is 1
     linear system matrix = precond matrix:
     Mat Object: (sub_) 1 MPI process
       type: seqaij
-      rows=2617, cols=2617
-      total: nonzeros=31677, allocated nonzeros=31677
+      rows=2631, cols=2631
+      total: nonzeros=31909, allocated nonzeros=31909
       total number of mallocs used during MatSetValues calls=0
         not using I-node routines
   linear system matrix followed by preconditioner matrix:
@@ -67,12 +65,13 @@ PC Object: 4 MPI processes
     total: nonzeros=117117, allocated nonzeros=117117
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 2.693018273052969e-07 / 273.83067727335236 = 9.83461130019649e-10
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000000 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
-There are 8 unused database options. They are:
+There are 9 unused database options. They are:
 Option left: name:-mg_coarse_pc_type value: redundant
 Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-mg_levels_pc_type value: sor
 Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
 Option left: name:-pc_hpddm_define_subdomains (no value)
 Option left: name:-pc_hpddm_levels_1_eps_nev value: 20

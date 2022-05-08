@@ -59,19 +59,19 @@ PC Object: 4 MPI processes
         out-of-place factorization
         tolerance for zero pivot 2.22045e-14
         matrix ordering: nd
-        factor fill ratio given 5., needed 8.22791
+        factor fill ratio given 5., needed 8.49166
           Factored matrix follows:
-            Mat Object: 1 MPI process
+            Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
               type: seqsbaij
-              rows=2617, cols=2617
+              rows=2631, cols=2631
               package used to perform factorization: petsc
-              total: nonzeros=141084, allocated nonzeros=141084
+              total: nonzeros=146651, allocated nonzeros=146651
                   block size is 1
       linear system matrix = precond matrix:
       Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
         type: seqaij
-        rows=2617, cols=2617
-        total: nonzeros=31677, allocated nonzeros=31677
+        rows=2631, cols=2631
+        total: nonzeros=31909, allocated nonzeros=31909
         total number of mallocs used during MatSetValues calls=0
           not using I-node routines
     linear system matrix followed by preconditioner matrix:
@@ -97,7 +97,7 @@ PC Object: 4 MPI processes
         matrix ordering: natural
         factor fill ratio given 5., needed 1.1
           Factored matrix follows:
-            Mat Object: 1 MPI process
+            Mat Object: (pc_hpddm_coarse_) 1 MPI process
               type: seqsbaij
               rows=80, cols=80, bs=20
               package used to perform factorization: petsc
@@ -120,11 +120,12 @@ PC Object: 4 MPI processes
     total: nonzeros=117117, allocated nonzeros=117117
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 3.1756879132076827e-07 / 273.8306772733523 = 1.1597268592508876e-09
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000000 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
-There are 4 unused database options. They are:
+There are 5 unused database options. They are:
 Option left: name:-mg_coarse_pc_type value: redundant
 Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-mg_levels_pc_type value: sor
 Option left: name:-pc_hypre_boomeramg_print_statistics value: 1
 Option left: name:-sub_pc_type value: cholesky

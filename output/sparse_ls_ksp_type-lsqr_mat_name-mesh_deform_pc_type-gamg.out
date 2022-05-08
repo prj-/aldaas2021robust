@@ -1,31 +1,32 @@
   0 KSP resid norm 2.793108625211e+02
-  1 KSP resid norm 2.739917158203e+02 normal eq resid norm 6.405737176672e+00 matrix norm 1.436464461053e+02
-  2 KSP resid norm 2.738775615038e+02 normal eq resid norm 2.391661136719e+00 matrix norm 1.436464461053e+02
-  3 KSP resid norm 2.738441801110e+02 normal eq resid norm 1.414604810586e+00 matrix norm 1.436464461053e+02
-  4 KSP resid norm 2.738359920953e+02 normal eq resid norm 8.662846225923e-01 matrix norm 1.436464461053e+02
-  5 KSP resid norm 2.738326074390e+02 normal eq resid norm 4.518830697059e-01 matrix norm 1.436464461053e+02
-  6 KSP resid norm 2.738315674820e+02 normal eq resid norm 2.925196410331e-01 matrix norm 1.436464461053e+02
-  7 KSP resid norm 2.738311814107e+02 normal eq resid norm 1.895000614535e-01 matrix norm 1.436464461053e+02
-  8 KSP resid norm 2.738309720506e+02 normal eq resid norm 1.410772348458e-01 matrix norm 1.436464461053e+02
-  9 KSP resid norm 2.738308534794e+02 normal eq resid norm 1.167970832113e-01 matrix norm 1.436464461053e+02
- 10 KSP resid norm 2.738307803870e+02 normal eq resid norm 8.392344898534e-02 matrix norm 1.436464461053e+02
- 11 KSP resid norm 2.738307400784e+02 normal eq resid norm 6.304935287296e-02 matrix norm 1.436464461053e+02
- 12 KSP resid norm 2.738307159518e+02 normal eq resid norm 5.416074508423e-02 matrix norm 1.436464461053e+02
- 13 KSP resid norm 2.738306991096e+02 normal eq resid norm 4.168104814074e-02 matrix norm 1.436464461053e+02
- 14 KSP resid norm 2.738306883286e+02 normal eq resid norm 3.198723123178e-02 matrix norm 1.436464461053e+02
- 15 KSP resid norm 2.738306832268e+02 normal eq resid norm 2.221493573575e-02 matrix norm 1.436464461053e+02
- 16 KSP resid norm 2.738306806442e+02 normal eq resid norm 1.500953609270e-02 matrix norm 1.436464461053e+02
- 17 KSP resid norm 2.738306793551e+02 normal eq resid norm 1.187464827791e-02 matrix norm 1.436464461053e+02
- 18 KSP resid norm 2.738306785527e+02 normal eq resid norm 9.613141484882e-03 matrix norm 1.436464461053e+02
- 19 KSP resid norm 2.738306779264e+02 normal eq resid norm 8.250306508307e-03 matrix norm 1.436464461053e+02
- 20 KSP resid norm 2.738306775566e+02 normal eq resid norm 5.854897636857e-03 matrix norm 1.436464461053e+02
- 21 KSP resid norm 2.738306773852e+02 normal eq resid norm 3.773919703484e-03 matrix norm 1.436464461053e+02
- 22 KSP resid norm 2.738306773150e+02 normal eq resid norm 2.395281154203e-03 matrix norm 1.436464461053e+02
- 23 KSP resid norm 2.738306772881e+02 normal eq resid norm 1.381827511862e-03 matrix norm 1.436464461053e+02
- 24 KSP resid norm 2.738306772796e+02 normal eq resid norm 8.142749900158e-04 matrix norm 1.436464461053e+02
- 25 KSP resid norm 2.738306772763e+02 normal eq resid norm 5.120803544839e-04 matrix norm 1.436464461053e+02
- 26 KSP resid norm 2.738306772750e+02 normal eq resid norm 3.835697757452e-04 matrix norm 1.436464461053e+02
-Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 26
+  1 KSP resid norm 2.740090013078e+02 normal eq resid norm 6.872062493577e+00 matrix norm 1.436464461053e+02
+  2 KSP resid norm 2.738801879682e+02 normal eq resid norm 2.235150521792e+00 matrix norm 1.436464461053e+02
+  3 KSP resid norm 2.738479631432e+02 normal eq resid norm 1.481828941404e+00 matrix norm 1.436464461053e+02
+  4 KSP resid norm 2.738388266572e+02 normal eq resid norm 9.672138212950e-01 matrix norm 1.436464461053e+02
+  5 KSP resid norm 2.738338914899e+02 normal eq resid norm 5.798956615799e-01 matrix norm 1.436464461053e+02
+  6 KSP resid norm 2.738321362550e+02 normal eq resid norm 4.104913293093e-01 matrix norm 1.436464461053e+02
+  7 KSP resid norm 2.738313552051e+02 normal eq resid norm 2.585269165658e-01 matrix norm 1.436464461053e+02
+  8 KSP resid norm 2.738309869273e+02 normal eq resid norm 1.716860344369e-01 matrix norm 1.436464461053e+02
+  9 KSP resid norm 2.738308421319e+02 normal eq resid norm 1.195386898219e-01 matrix norm 1.436464461053e+02
+ 10 KSP resid norm 2.738307706156e+02 normal eq resid norm 7.800001748003e-02 matrix norm 1.436464461053e+02
+ 11 KSP resid norm 2.738307333923e+02 normal eq resid norm 6.393254872955e-02 matrix norm 1.436464461053e+02
+ 12 KSP resid norm 2.738307107299e+02 normal eq resid norm 5.084143782175e-02 matrix norm 1.436464461053e+02
+ 13 KSP resid norm 2.738306946719e+02 normal eq resid norm 4.010718447765e-02 matrix norm 1.436464461053e+02
+ 14 KSP resid norm 2.738306860491e+02 normal eq resid norm 2.809344601012e-02 matrix norm 1.436464461053e+02
+ 15 KSP resid norm 2.738306818372e+02 normal eq resid norm 2.120563845489e-02 matrix norm 1.436464461053e+02
+ 16 KSP resid norm 2.738306792536e+02 normal eq resid norm 1.459139959443e-02 matrix norm 1.436464461053e+02
+ 17 KSP resid norm 2.738306782142e+02 normal eq resid norm 9.812194298988e-03 matrix norm 1.436464461053e+02
+ 18 KSP resid norm 2.738306777246e+02 normal eq resid norm 6.476000185239e-03 matrix norm 1.436464461053e+02
+ 19 KSP resid norm 2.738306775046e+02 normal eq resid norm 4.524284787732e-03 matrix norm 1.436464461053e+02
+ 20 KSP resid norm 2.738306774008e+02 normal eq resid norm 3.132030589516e-03 matrix norm 1.436464461053e+02
+ 21 KSP resid norm 2.738306773437e+02 normal eq resid norm 2.475640040145e-03 matrix norm 1.436464461053e+02
+ 22 KSP resid norm 2.738306773086e+02 normal eq resid norm 1.807369959599e-03 matrix norm 1.436464461053e+02
+ 23 KSP resid norm 2.738306772922e+02 normal eq resid norm 1.245317240796e-03 matrix norm 1.436464461053e+02
+ 24 KSP resid norm 2.738306772836e+02 normal eq resid norm 9.242924682227e-04 matrix norm 1.436464461053e+02
+ 25 KSP resid norm 2.738306772786e+02 normal eq resid norm 7.083398729111e-04 matrix norm 1.436464461053e+02
+ 26 KSP resid norm 2.738306772760e+02 normal eq resid norm 5.077200062435e-04 matrix norm 1.436464461053e+02
+ 27 KSP resid norm 2.738306772745e+02 normal eq resid norm 3.591014614113e-04 matrix norm 1.436464461053e+02
+Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 27
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
@@ -46,8 +47,8 @@ PC Object: 4 MPI processes
           Symmetric graph false
           Number of levels to square graph 1
           Number smoothing steps 1
-        Complexity:    grid = 1.07772
-  Coarse grid solver -- level -------------------------------
+        Complexity:    grid = 1.05483    operator = 1.08437
+  Coarse grid solver -- level 0 -------------------------------
     KSP Object: (mg_coarse_) 4 MPI processes
       type: preonly
       maximum iterations=10000, initial guess is zero
@@ -70,33 +71,32 @@ PC Object: 4 MPI processes
             matrix ordering: nd
             factor fill ratio given 5., needed 1.
               Factored matrix follows:
-                Mat Object: 1 MPI process
+                Mat Object: (mg_coarse_redundant_) 1 MPI process
                   type: seqsbaij
-                  rows=4, cols=4
+                  rows=6, cols=6
                   package used to perform factorization: petsc
-                  total: nonzeros=10, allocated nonzeros=10
+                  total: nonzeros=21, allocated nonzeros=21
                       block size is 1
           linear system matrix = precond matrix:
           Mat Object: 1 MPI process
             type: seqaij
-            rows=4, cols=4
-            total: nonzeros=16, allocated nonzeros=16
+            rows=6, cols=6
+            total: nonzeros=36, allocated nonzeros=36
             total number of mallocs used during MatSetValues calls=0
-              using I-node routines: found 1 nodes, limit used is 5
+              using I-node routines: found 2 nodes, limit used is 5
       linear system matrix = precond matrix:
       Mat Object: 4 MPI processes
         type: mpiaij
-        rows=4, cols=4
-        total: nonzeros=16, allocated nonzeros=16
+        rows=6, cols=6
+        total: nonzeros=36, allocated nonzeros=36
         total number of mallocs used during MatSetValues calls=0
-          using nonscalable MatPtAP() implementation
-          using I-node (on process 0) routines: found 1 nodes, limit used is 5
+          using I-node (on process 0) routines: found 2 nodes, limit used is 5
   Down solver (pre-smoother) on level 1 -------------------------------
     KSP Object: (mg_levels_1_) 4 MPI processes
       type: chebyshev
-        eigenvalue estimates used:  min = 0.0999885, max = 1.09987
-        eigenvalues estimate via gmres min 0.908015, max 0.999885
-        eigenvalues estimated using gmres with translations  [0. 0.1; 0. 1.1]
+        eigenvalue targets used: min 0.117766, max 1.29543
+        eigenvalues estimated via gmres: min 0.399023, max 1.17766
+        eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
         KSP Object: (mg_levels_1_esteig_) 4 MPI processes
           type: gmres
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -116,17 +116,17 @@ PC Object: 4 MPI processes
       linear system matrix = precond matrix:
       Mat Object: 4 MPI processes
         type: mpiaij
-        rows=52, cols=52
-        total: nonzeros=1298, allocated nonzeros=1298
+        rows=81, cols=81
+        total: nonzeros=3043, allocated nonzeros=3043
         total number of mallocs used during MatSetValues calls=0
           not using I-node (on process 0) routines
   Up solver (post-smoother) same as down solver (pre-smoother)
   Down solver (pre-smoother) on level 2 -------------------------------
     KSP Object: (mg_levels_2_) 4 MPI processes
       type: chebyshev
-        eigenvalue estimates used:  min = 0.1536, max = 1.6896
-        eigenvalues estimate via gmres min 0.313507, max 1.536
-        eigenvalues estimated using gmres with translations  [0. 0.1; 0. 1.1]
+        eigenvalue targets used: min 0.127826, max 1.40609
+        eigenvalues estimated via gmres: min 0.0541265, max 1.27826
+        eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
         KSP Object: (mg_levels_2_esteig_) 4 MPI processes
           type: gmres
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -146,8 +146,8 @@ PC Object: 4 MPI processes
       linear system matrix = precond matrix:
       Mat Object: 4 MPI processes
         type: mpiaij
-        rows=460, cols=460
-        total: nonzeros=7788, allocated nonzeros=7788
+        rows=428, cols=428
+        total: nonzeros=6802, allocated nonzeros=6802
         total number of mallocs used during MatSetValues calls=0
           using nonscalable MatPtAP() implementation
           not using I-node (on process 0) routines
@@ -155,9 +155,9 @@ PC Object: 4 MPI processes
   Down solver (pre-smoother) on level 3 -------------------------------
     KSP Object: (mg_levels_3_) 4 MPI processes
       type: chebyshev
-        eigenvalue estimates used:  min = 0.189558, max = 2.08514
-        eigenvalues estimate via gmres min 0.0307263, max 1.89558
-        eigenvalues estimated using gmres with translations  [0. 0.1; 0. 1.1]
+        eigenvalue targets used: min 0.164944, max 1.81438
+        eigenvalues estimated via gmres: min 0.0215991, max 1.64944
+        eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
         KSP Object: (mg_levels_3_esteig_) 4 MPI processes
           type: gmres
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -188,14 +188,14 @@ PC Object: 4 MPI processes
     rows=234023, cols=9393
     total: nonzeros=853829, allocated nonzeros=853829
     total number of mallocs used during MatSetValues calls=0
-      using I-node (on process 0) routines: found 14752 nodes, limit used is 5
+      using I-node (on process 0) routines: found 14805 nodes, limit used is 5
   Mat Object: 4 MPI processes
     type: mpiaij
     rows=9393, cols=9393
     total: nonzeros=117117, allocated nonzeros=117117
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 0.000486 / 273.830677 = 0.000002
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000444 / 273.830677 = 0.000002
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 9 unused database options. They are:

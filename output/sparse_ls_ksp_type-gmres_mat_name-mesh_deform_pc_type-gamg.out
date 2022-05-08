@@ -1,48 +1,48 @@
   0 KSP Residual norm 8.279698482740e+01 
-  1 KSP Residual norm 9.959275786854e+00 
-  2 KSP Residual norm 1.905298097210e+00 
-  3 KSP Residual norm 1.157762777924e+00 
-  4 KSP Residual norm 9.389559300239e-01 
-  5 KSP Residual norm 4.379557035573e-01 
-  6 KSP Residual norm 2.892921358955e-01 
-  7 KSP Residual norm 2.341840367964e-01 
-  8 KSP Residual norm 2.094661064568e-01 
-  9 KSP Residual norm 1.807369369897e-01 
- 10 KSP Residual norm 1.445680383719e-01 
- 11 KSP Residual norm 9.411933391036e-02 
- 12 KSP Residual norm 7.221183271989e-02 
- 13 KSP Residual norm 4.829032193511e-02 
- 14 KSP Residual norm 3.293962932126e-02 
- 15 KSP Residual norm 2.268950329746e-02 
- 16 KSP Residual norm 1.375161837737e-02 
- 17 KSP Residual norm 8.786012355245e-03 
- 18 KSP Residual norm 7.006498330050e-03 
- 19 KSP Residual norm 5.375770029368e-03 
- 20 KSP Residual norm 3.551136709473e-03 
- 21 KSP Residual norm 2.299779209526e-03 
- 22 KSP Residual norm 1.442461875887e-03 
- 23 KSP Residual norm 8.921885905278e-04 
- 24 KSP Residual norm 5.721597618216e-04 
- 25 KSP Residual norm 4.267073429911e-04 
- 26 KSP Residual norm 3.321085921872e-04 
- 27 KSP Residual norm 2.383770433843e-04 
- 28 KSP Residual norm 1.591840936379e-04 
- 29 KSP Residual norm 1.200251457821e-04 
- 30 KSP Residual norm 9.389303464048e-05 
- 31 KSP Residual norm 7.715070881883e-05 
- 32 KSP Residual norm 5.959674292822e-05 
- 33 KSP Residual norm 4.498442148268e-05 
- 34 KSP Residual norm 3.300295261801e-05 
- 35 KSP Residual norm 2.552325290409e-05 
- 36 KSP Residual norm 1.714780992935e-05 
- 37 KSP Residual norm 1.049124056175e-05 
- 38 KSP Residual norm 6.279462327830e-06 
- 39 KSP Residual norm 4.271297862469e-06 
- 40 KSP Residual norm 3.093043968776e-06 
- 41 KSP Residual norm 2.264054063710e-06 
- 42 KSP Residual norm 1.545632772242e-06 
- 43 KSP Residual norm 1.063581237076e-06 
- 44 KSP Residual norm 7.379081703831e-07 
+  1 KSP Residual norm 1.149970288674e+01 
+  2 KSP Residual norm 2.045012963646e+00 
+  3 KSP Residual norm 1.374059154528e+00 
+  4 KSP Residual norm 9.363082410439e-01 
+  5 KSP Residual norm 4.256042863033e-01 
+  6 KSP Residual norm 3.087326573185e-01 
+  7 KSP Residual norm 2.378947767794e-01 
+  8 KSP Residual norm 1.803032273416e-01 
+  9 KSP Residual norm 1.505800866837e-01 
+ 10 KSP Residual norm 1.186554002254e-01 
+ 11 KSP Residual norm 9.712754966527e-02 
+ 12 KSP Residual norm 6.081616199589e-02 
+ 13 KSP Residual norm 3.884362905293e-02 
+ 14 KSP Residual norm 2.346872095927e-02 
+ 15 KSP Residual norm 1.554996794716e-02 
+ 16 KSP Residual norm 1.127074815865e-02 
+ 17 KSP Residual norm 7.880254832553e-03 
+ 18 KSP Residual norm 5.749667811651e-03 
+ 19 KSP Residual norm 3.991370982915e-03 
+ 20 KSP Residual norm 2.419696893955e-03 
+ 21 KSP Residual norm 1.632298397709e-03 
+ 22 KSP Residual norm 1.127811070160e-03 
+ 23 KSP Residual norm 7.820263314907e-04 
+ 24 KSP Residual norm 5.914476364096e-04 
+ 25 KSP Residual norm 4.280660719457e-04 
+ 26 KSP Residual norm 3.293703240633e-04 
+ 27 KSP Residual norm 2.475114810956e-04 
+ 28 KSP Residual norm 1.712110876555e-04 
+ 29 KSP Residual norm 1.079735050361e-04 
+ 30 KSP Residual norm 7.211444442823e-05 
+ 31 KSP Residual norm 4.008234914710e-05 
+ 32 KSP Residual norm 2.675376031534e-05 
+ 33 KSP Residual norm 1.790217353484e-05 
+ 34 KSP Residual norm 1.274309742042e-05 
+ 35 KSP Residual norm 9.172708680142e-06 
+ 36 KSP Residual norm 8.132932211779e-06 
+ 37 KSP Residual norm 6.807175876179e-06 
+ 38 KSP Residual norm 5.423680376305e-06 
+ 39 KSP Residual norm 3.954707878366e-06 
+ 40 KSP Residual norm 2.771292113302e-06 
+ 41 KSP Residual norm 1.977888736042e-06 
+ 42 KSP Residual norm 1.492607243326e-06 
+ 43 KSP Residual norm 1.142893766522e-06 
+ 44 KSP Residual norm 7.744385919928e-07 
 Linear solve converged due to CONVERGED_RTOL iterations 44
 KSP Object: 4 MPI processes
   type: gmres
@@ -64,8 +64,8 @@ PC Object: 4 MPI processes
           Symmetric graph false
           Number of levels to square graph 1
           Number smoothing steps 1
-        Complexity:    grid = 1.07772
-  Coarse grid solver -- level -------------------------------
+        Complexity:    grid = 1.05483    operator = 1.08437
+  Coarse grid solver -- level 0 -------------------------------
     KSP Object: (mg_coarse_) 4 MPI processes
       type: preonly
       maximum iterations=10000, initial guess is zero
@@ -88,33 +88,32 @@ PC Object: 4 MPI processes
             matrix ordering: nd
             factor fill ratio given 5., needed 1.
               Factored matrix follows:
-                Mat Object: 1 MPI process
+                Mat Object: (mg_coarse_redundant_) 1 MPI process
                   type: seqsbaij
-                  rows=4, cols=4
+                  rows=6, cols=6
                   package used to perform factorization: petsc
-                  total: nonzeros=10, allocated nonzeros=10
+                  total: nonzeros=21, allocated nonzeros=21
                       block size is 1
           linear system matrix = precond matrix:
           Mat Object: 1 MPI process
             type: seqaij
-            rows=4, cols=4
-            total: nonzeros=16, allocated nonzeros=16
+            rows=6, cols=6
+            total: nonzeros=36, allocated nonzeros=36
             total number of mallocs used during MatSetValues calls=0
-              using I-node routines: found 1 nodes, limit used is 5
+              using I-node routines: found 2 nodes, limit used is 5
       linear system matrix = precond matrix:
       Mat Object: 4 MPI processes
         type: mpiaij
-        rows=4, cols=4
-        total: nonzeros=16, allocated nonzeros=16
+        rows=6, cols=6
+        total: nonzeros=36, allocated nonzeros=36
         total number of mallocs used during MatSetValues calls=0
-          using nonscalable MatPtAP() implementation
-          using I-node (on process 0) routines: found 1 nodes, limit used is 5
+          using I-node (on process 0) routines: found 2 nodes, limit used is 5
   Down solver (pre-smoother) on level 1 -------------------------------
     KSP Object: (mg_levels_1_) 4 MPI processes
       type: chebyshev
-        eigenvalue estimates used:  min = 0.0999885, max = 1.09987
-        eigenvalues estimate via gmres min 0.908015, max 0.999885
-        eigenvalues estimated using gmres with translations  [0. 0.1; 0. 1.1]
+        eigenvalue targets used: min 0.117766, max 1.29543
+        eigenvalues estimated via gmres: min 0.399023, max 1.17766
+        eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
         KSP Object: (mg_levels_1_esteig_) 4 MPI processes
           type: gmres
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -134,17 +133,17 @@ PC Object: 4 MPI processes
       linear system matrix = precond matrix:
       Mat Object: 4 MPI processes
         type: mpiaij
-        rows=52, cols=52
-        total: nonzeros=1298, allocated nonzeros=1298
+        rows=81, cols=81
+        total: nonzeros=3043, allocated nonzeros=3043
         total number of mallocs used during MatSetValues calls=0
           not using I-node (on process 0) routines
   Up solver (post-smoother) same as down solver (pre-smoother)
   Down solver (pre-smoother) on level 2 -------------------------------
     KSP Object: (mg_levels_2_) 4 MPI processes
       type: chebyshev
-        eigenvalue estimates used:  min = 0.1536, max = 1.6896
-        eigenvalues estimate via gmres min 0.313507, max 1.536
-        eigenvalues estimated using gmres with translations  [0. 0.1; 0. 1.1]
+        eigenvalue targets used: min 0.127826, max 1.40609
+        eigenvalues estimated via gmres: min 0.0541265, max 1.27826
+        eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
         KSP Object: (mg_levels_2_esteig_) 4 MPI processes
           type: gmres
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -164,8 +163,8 @@ PC Object: 4 MPI processes
       linear system matrix = precond matrix:
       Mat Object: 4 MPI processes
         type: mpiaij
-        rows=460, cols=460
-        total: nonzeros=7788, allocated nonzeros=7788
+        rows=428, cols=428
+        total: nonzeros=6802, allocated nonzeros=6802
         total number of mallocs used during MatSetValues calls=0
           using nonscalable MatPtAP() implementation
           not using I-node (on process 0) routines
@@ -173,9 +172,9 @@ PC Object: 4 MPI processes
   Down solver (pre-smoother) on level 3 -------------------------------
     KSP Object: (mg_levels_3_) 4 MPI processes
       type: chebyshev
-        eigenvalue estimates used:  min = 0.189558, max = 2.08514
-        eigenvalues estimate via gmres min 0.0307263, max 1.89558
-        eigenvalues estimated using gmres with translations  [0. 0.1; 0. 1.1]
+        eigenvalue targets used: min 0.164944, max 1.81438
+        eigenvalues estimated via gmres: min 0.0215991, max 1.64944
+        eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
         KSP Object: (mg_levels_3_esteig_) 4 MPI processes
           type: gmres
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -210,7 +209,7 @@ PC Object: 4 MPI processes
     total: nonzeros=117117, allocated nonzeros=117117
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 7.379080641467501e-07 / 273.8306772733523 = 2.694760395345081e-09
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000001 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 7 unused database options. They are:

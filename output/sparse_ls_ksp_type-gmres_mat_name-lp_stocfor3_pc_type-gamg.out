@@ -1020,8 +1020,8 @@ PC Object: 4 MPI processes
           Symmetric graph false
           Number of levels to square graph 1
           Number smoothing steps 1
-        Complexity:    grid = 1.19378
-  Coarse grid solver -- level -------------------------------
+        Complexity:    grid = 1.11562    operator = 1.47974
+  Coarse grid solver -- level 0 -------------------------------
     KSP Object: (mg_coarse_) 4 MPI processes
       type: preonly
       maximum iterations=10000, initial guess is zero
@@ -1044,7 +1044,7 @@ PC Object: 4 MPI processes
             matrix ordering: nd
             factor fill ratio given 5., needed 1.
               Factored matrix follows:
-                Mat Object: 1 MPI process
+                Mat Object: (mg_coarse_redundant_) 1 MPI process
                   type: seqsbaij
                   rows=1, cols=1
                   package used to perform factorization: petsc
@@ -1067,9 +1067,9 @@ PC Object: 4 MPI processes
   Down solver (pre-smoother) on level 1 -------------------------------
     KSP Object: (mg_levels_1_) 4 MPI processes
       type: chebyshev
-        eigenvalue estimates used:  min = 0.100752, max = 1.10828
-        eigenvalues estimate via gmres min 0.991741, max 1.00752
-        eigenvalues estimated using gmres with translations  [0. 0.1; 0. 1.1]
+        eigenvalue targets used: min 0.105354, max 1.15889
+        eigenvalues estimated via gmres: min 0.890896, max 1.05354
+        eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
         KSP Object: (mg_levels_1_esteig_) 4 MPI processes
           type: gmres
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -1089,18 +1089,18 @@ PC Object: 4 MPI processes
       linear system matrix = precond matrix:
       Mat Object: 4 MPI processes
         type: mpiaij
-        rows=175, cols=175
-        total: nonzeros=29869, allocated nonzeros=29869
+        rows=249, cols=249
+        total: nonzeros=62001, allocated nonzeros=62001
         total number of mallocs used during MatSetValues calls=0
           using nonscalable MatPtAP() implementation
-          using I-node (on process 0) routines: found 10 nodes, limit used is 5
+          using I-node (on process 0) routines: found 13 nodes, limit used is 5
   Up solver (post-smoother) same as down solver (pre-smoother)
   Down solver (pre-smoother) on level 2 -------------------------------
     KSP Object: (mg_levels_2_) 4 MPI processes
       type: chebyshev
-        eigenvalue estimates used:  min = 0.102616, max = 1.12878
-        eigenvalues estimate via gmres min 0.919647, max 1.02616
-        eigenvalues estimated using gmres with translations  [0. 0.1; 0. 1.1]
+        eigenvalue targets used: min 0.103583, max 1.13941
+        eigenvalues estimated via gmres: min 0.751087, max 1.03583
+        eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
         KSP Object: (mg_levels_2_esteig_) 4 MPI processes
           type: gmres
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -1120,8 +1120,8 @@ PC Object: 4 MPI processes
       linear system matrix = precond matrix:
       Mat Object: 4 MPI processes
         type: mpiaij
-        rows=876, cols=876
-        total: nonzeros=13420, allocated nonzeros=13420
+        rows=1685, cols=1685
+        total: nonzeros=45823, allocated nonzeros=45823
         total number of mallocs used during MatSetValues calls=0
           using nonscalable MatPtAP() implementation
           not using I-node (on process 0) routines
@@ -1129,9 +1129,9 @@ PC Object: 4 MPI processes
   Down solver (pre-smoother) on level 3 -------------------------------
     KSP Object: (mg_levels_3_) 4 MPI processes
       type: chebyshev
-        eigenvalue estimates used:  min = 0.306993, max = 3.37692
-        eigenvalues estimate via gmres min 0.0275166, max 3.06993
-        eigenvalues estimated using gmres with translations  [0. 0.1; 0. 1.1]
+        eigenvalue targets used: min 0.306993, max 3.37692
+        eigenvalues estimated via gmres: min 0.0275166, max 3.06993
+        eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
         KSP Object: (mg_levels_3_esteig_) 4 MPI processes
           type: gmres
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -1166,7 +1166,7 @@ PC Object: 4 MPI processes
     total: nonzeros=223395, allocated nonzeros=223395
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 1.916184089416028 / 40.2508960999403 = 0.04760599825301455
+||A^T(Ax-b)|| / ||Ax-b|| = 1.262335 / 40.212333 = 0.031392
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 7 unused database options. They are:

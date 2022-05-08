@@ -1,23 +1,25 @@
   0 KSP resid norm 8.836103988221e+01
-  1 KSP resid norm 6.265860785483e+01 normal eq resid norm 2.153290820242e+01 matrix norm 3.062907705646e+04
-  2 KSP resid norm 6.085855446588e+01 normal eq resid norm 1.679864150737e+01 matrix norm 3.062907705646e+04
-  3 KSP resid norm 5.623560328289e+01 normal eq resid norm 2.593259405854e+01 matrix norm 3.062907705646e+04
-  4 KSP resid norm 5.101369295607e+01 normal eq resid norm 1.964566401641e+01 matrix norm 3.062907705646e+04
-  5 KSP resid norm 4.770569970796e+01 normal eq resid norm 1.792505539128e+01 matrix norm 3.062907705646e+04
-  6 KSP resid norm 4.375061995819e+01 normal eq resid norm 1.546428447514e+01 matrix norm 3.062907705646e+04
-  7 KSP resid norm 4.213017231409e+01 normal eq resid norm 7.026632127599e+00 matrix norm 3.062907705646e+04
-  8 KSP resid norm 4.153190479918e+01 normal eq resid norm 9.267015347636e+00 matrix norm 3.062907705646e+04
-  9 KSP resid norm 4.056827076518e+01 normal eq resid norm 5.852542994798e+00 matrix norm 3.062907705646e+04
- 10 KSP resid norm 4.027791560245e+01 normal eq resid norm 2.995614319488e+00 matrix norm 3.062907705646e+04
- 11 KSP resid norm 4.022101892112e+01 normal eq resid norm 1.642104495869e+00 matrix norm 3.062907705646e+04
- 12 KSP resid norm 4.019942637743e+01 normal eq resid norm 5.266559340941e-01 matrix norm 3.062907705646e+04
- 13 KSP resid norm 4.019785516215e+01 normal eq resid norm 2.207045512420e-01 matrix norm 3.062907705646e+04
- 14 KSP resid norm 4.019728220960e+01 normal eq resid norm 1.384547961587e-01 matrix norm 3.062907705646e+04
- 15 KSP resid norm 4.019717880961e+01 normal eq resid norm 6.133580903961e-02 matrix norm 3.062907705646e+04
- 16 KSP resid norm 4.019715183143e+01 normal eq resid norm 3.117944072714e-02 matrix norm 3.062907705646e+04
- 17 KSP resid norm 4.019714490350e+01 normal eq resid norm 2.054205040069e-02 matrix norm 3.062907705646e+04
- 18 KSP resid norm 4.019713981865e+01 normal eq resid norm 1.059292337280e-02 matrix norm 3.062907705646e+04
-Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 18
+  1 KSP resid norm 6.263406535064e+01 normal eq resid norm 2.185328415303e+01 matrix norm 3.062907705646e+04
+  2 KSP resid norm 6.078937482118e+01 normal eq resid norm 1.675712626800e+01 matrix norm 3.062907705646e+04
+  3 KSP resid norm 5.623389000050e+01 normal eq resid norm 2.571119746306e+01 matrix norm 3.062907705646e+04
+  4 KSP resid norm 5.116069416214e+01 normal eq resid norm 1.973243951891e+01 matrix norm 3.062907705646e+04
+  5 KSP resid norm 4.805069918445e+01 normal eq resid norm 1.722982457890e+01 matrix norm 3.062907705646e+04
+  6 KSP resid norm 4.404435985569e+01 normal eq resid norm 1.535763596260e+01 matrix norm 3.062907705646e+04
+  7 KSP resid norm 4.235814038093e+01 normal eq resid norm 7.408051334456e+00 matrix norm 3.062907705646e+04
+  8 KSP resid norm 4.170168090782e+01 normal eq resid norm 9.750339418223e+00 matrix norm 3.062907705646e+04
+  9 KSP resid norm 4.063016089869e+01 normal eq resid norm 6.334727358005e+00 matrix norm 3.062907705646e+04
+ 10 KSP resid norm 4.029571649643e+01 normal eq resid norm 3.319140653206e+00 matrix norm 3.062907705646e+04
+ 11 KSP resid norm 4.022262648454e+01 normal eq resid norm 1.724047295703e+00 matrix norm 3.062907705646e+04
+ 12 KSP resid norm 4.019921392124e+01 normal eq resid norm 5.285488614867e-01 matrix norm 3.062907705646e+04
+ 13 KSP resid norm 4.019775247744e+01 normal eq resid norm 1.914561354030e-01 matrix norm 3.062907705646e+04
+ 14 KSP resid norm 4.019735061926e+01 normal eq resid norm 1.449855343236e-01 matrix norm 3.062907705646e+04
+ 15 KSP resid norm 4.019722568173e+01 normal eq resid norm 7.645632075647e-02 matrix norm 3.062907705646e+04
+ 16 KSP resid norm 4.019717338221e+01 normal eq resid norm 4.467934852817e-02 matrix norm 3.062907705646e+04
+ 17 KSP resid norm 4.019715468008e+01 normal eq resid norm 3.646596387343e-02 matrix norm 3.062907705646e+04
+ 18 KSP resid norm 4.019714185729e+01 normal eq resid norm 1.641333917907e-02 matrix norm 3.062907705646e+04
+ 19 KSP resid norm 4.019713893775e+01 normal eq resid norm 1.439863241997e-02 matrix norm 3.062907705646e+04
+ 20 KSP resid norm 4.019713744188e+01 normal eq resid norm 5.678803000582e-03 matrix norm 3.062907705646e+04
+Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 20
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
@@ -49,7 +51,7 @@ PC Object: 4 MPI processes
       rows=23541, cols=16675
       total: nonzeros=72721, allocated nonzeros=72721
       total number of mallocs used during MatSetValues calls=0
-        using I-node (on process 0) routines: found 2760 nodes, limit used is 5
+        using I-node (on process 0) routines: found 2748 nodes, limit used is 5
     Mat Object: 4 MPI processes
       type: mpiaij
       rows=16675, cols=16675
@@ -73,19 +75,19 @@ PC Object: 4 MPI processes
         out-of-place factorization
         tolerance for zero pivot 2.22045e-14
         matrix ordering: nd
-        factor fill ratio given 5., needed 3.30375
+        factor fill ratio given 5., needed 3.37836
           Factored matrix follows:
-            Mat Object: 1 MPI process
+            Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
               type: seqsbaij
-              rows=4297, cols=4297
+              rows=4176, cols=4176
               package used to perform factorization: petsc
-              total: nonzeros=103024, allocated nonzeros=103024
+              total: nonzeros=101246, allocated nonzeros=101246
                   block size is 1
       linear system matrix = precond matrix:
       Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
         type: seqaij
-        rows=4297, cols=4297
-        total: nonzeros=58071, allocated nonzeros=58071
+        rows=4176, cols=4176
+        total: nonzeros=55762, allocated nonzeros=55762
         total number of mallocs used during MatSetValues calls=0
           not using I-node routines
     linear system matrix followed by preconditioner matrix:
@@ -94,7 +96,7 @@ PC Object: 4 MPI processes
       rows=23541, cols=16675
       total: nonzeros=72721, allocated nonzeros=72721
       total number of mallocs used during MatSetValues calls=0
-        using I-node (on process 0) routines: found 2760 nodes, limit used is 5
+        using I-node (on process 0) routines: found 2748 nodes, limit used is 5
     Mat Object: 4 MPI processes
       type: mpiaij
       rows=16675, cols=16675
@@ -114,7 +116,7 @@ PC Object: 4 MPI processes
         matrix ordering: natural
         factor fill ratio given 5., needed 1.1
           Factored matrix follows:
-            Mat Object: 1 MPI process
+            Mat Object: (pc_hpddm_coarse_) 1 MPI process
               type: seqsbaij
               rows=80, cols=80, bs=20
               package used to perform factorization: petsc
@@ -133,19 +135,20 @@ PC Object: 4 MPI processes
     rows=23541, cols=16675
     total: nonzeros=72721, allocated nonzeros=72721
     total number of mallocs used during MatSetValues calls=0
-      using I-node (on process 0) routines: found 2760 nodes, limit used is 5
+      using I-node (on process 0) routines: found 2748 nodes, limit used is 5
   Mat Object: 4 MPI processes
     type: mpiaij
     rows=16675, cols=16675
     total: nonzeros=223395, allocated nonzeros=223395
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 1.653221 / 40.197140 = 0.041128
+||A^T(Ax-b)|| / ||Ax-b|| = 0.6159629727754956 / 40.197137441882234 = 0.015323553167587276
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
-There are 5 unused database options. They are:
+There are 6 unused database options. They are:
 Option left: name:-mg_coarse_pc_type value: redundant
 Option left: name:-mg_coarse_redundant_pc_type value: cholesky
+Option left: name:-mg_levels_pc_type value: sor
 Option left: name:-pc_asm_type value: basic
 Option left: name:-pc_hypre_boomeramg_print_statistics value: 1
 Option left: name:-sub_pc_type value: cholesky
