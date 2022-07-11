@@ -20,7 +20,8 @@ check: all sparse_ls.py
 				cmd="${MPIEXEC} -np $${NP} $${BinName} -mat_name datafiles/$${MatName}.dat -pc_type $${PCType} -options_file default.rc -ksp_view"; \
 				echo "$${cmd}"; \
 				$${cmd} > output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out || exit; \
-				${PETSC_DIR}/lib/petsc/bin/petscdiff output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}.out output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out; \
+				breakdown=`grep -e DIVERGED_ITS -e DIVERGED_BREAKDOWN output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}.out | wc -l | xargs echo`; \
+				if [ "$${breakdown}" != "2" ]; then ${PETSC_DIR}/lib/petsc/bin/petscdiff output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}.out output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out; fi; \
 				unlink output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out 2> /dev/null; \
 			done \
 		done \
@@ -30,16 +31,22 @@ check: all sparse_ls.py
 			cmd="${MPIEXEC} -np 4 ./sparse_ls -mat_name datafiles/$${MatName}.dat -pc_type $${PCType} -options_file gmres.rc -ksp_view"; \
 			echo "$${cmd}"; \
 			$${cmd} > output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out || exit; \
-			${PETSC_DIR}/lib/petsc/bin/petscdiff output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.out output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out; \
+			breakdown=`grep -e DIVERGED_ITS -e DIVERGED_BREAKDOWN output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.out | wc -l | xargs echo`; \
+			if [ "$${breakdown}" != "2" ]; then  ${PETSC_DIR}/lib/petsc/bin/petscdiff output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.out output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out; fi; \
 			unlink output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out 2> /dev/null; \
 		done \
 	done; \
 	for PCType in hpddm; do \
 		for MatName in mesh_deform; do \
-			cmd="${MPIEXEC} -np 4 ./sparse_ls -mat_name datafiles/$${MatName}.dat -pc_type $${PCType} -options_file default.rc -pc_use_qr -pc_hpddm_levels_1_sub_pc_type qr -ksp_view"; \
-			echo "$${cmd}"; \
-			$${cmd} > output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}_pc_use_qr.tmp.out || exit; \
-			${PETSC_DIR}/lib/petsc/bin/petscdiff output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}_pc_use_qr.out output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}_pc_use_qr.tmp.out; \
-			unlink output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}_pc_use_qr.tmp.out 2> /dev/null; \
+			for UseQR in true false; do \
+				for HiddenSetup in true; do \
+					if [ "$${UseQR}" = "true" ]; then suffix="_pc_use_qr"; options="$${UseQR} -pc_hpddm_levels_1_sub_pc_type qr"; else suffix=; options=false; fi; \
+					cmd="${MPIEXEC} -np 4 ./sparse_ls -mat_name datafiles/$${MatName}.dat -pc_type $${PCType} -options_file default.rc -pc_use_qr $${options} -ksp_view -pc_hidden_setup $${HiddenSetup}"; \
+					echo "$${cmd}"; \
+					$${cmd} > output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}$${suffix}.tmp.out || exit; \
+					${PETSC_DIR}/lib/petsc/bin/petscdiff output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}$${suffix}.out output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}$${suffix}.tmp.out; \
+					unlink output/sparse_ls_ksp_type-lsqr_mat_name-$${MatName}_pc_type-$${PCType}$${suffix}.tmp.out 2> /dev/null; \
+				done \
+			done \
 		done \
 	done

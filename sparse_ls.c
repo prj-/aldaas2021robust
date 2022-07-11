@@ -32,6 +32,7 @@ int main(int argc,char **args)
   PetscViewer viewer;
   char        name[PETSC_MAX_PATH_LEN];
 
+  PetscFunctionBeginUser;
   PetscCall(PetscInitialize(&argc,&args,NULL,help));
   PetscCallMPI(MPI_Comm_rank(PETSC_COMM_WORLD,&rank));
   // begin loading phase (section 4.1.1)
@@ -64,8 +65,6 @@ int main(int argc,char **args)
     PetscCall(MatPartitioningDestroy(&mpart));
     PetscCall(ISBuildTwoSided(is,NULL,&rows));
     PetscCall(ISDestroy(&is));
-    PetscCall(PetscObjectTypeCompare((PetscObject)ksp,KSPLSQR,&normal));
-    normal = (PetscBool)!normal;
     PetscCall(PetscOptionsGetBool(NULL,NULL,"-pc_use_qr",&qr,NULL));
     if (!qr) PetscCall(MatProductNumeric(B));
     PetscCall(MatCreateSubMatrix(B,rows,rows,MAT_INITIAL_MATRIX,&perm));
@@ -90,36 +89,40 @@ int main(int argc,char **args)
     PetscCall(KSPSetOperators(ksp,normal?C:A,qr?C:B));
     PetscCall(PetscObjectTypeCompare((PetscObject)pc,PCHPDDM,&flg));
     if (flg) {
-      PetscCall(MatGetOwnershipRangeColumn(A,&m,&n));
-      PetscCall(ISCreateStride(PETSC_COMM_SELF,n-m,m,1,&cols));
-      PetscCall(MatGetSize(A,&m,NULL));
-      PetscCall(ISCreateStride(PETSC_COMM_SELF,m,0,1,&rows));
-      PetscCall(MatSetOption(A,MAT_SUBMAT_SINGLEIS,PETSC_TRUE));
-      PetscCall(MatCreateSubMatrices(A,1,&rows,&cols,MAT_INITIAL_MATRIX,&Neumann));
-      PetscCall(MatFindZeroRows(*Neumann,&is));
-      PetscCall(MatDestroySubMatrices(1,&Neumann));
-      PetscCall(MatIncreaseOverlap(B,1,&cols,1));
-      PetscCall(MatCreateSubMatrices(A,1,&rows,&cols,MAT_INITIAL_MATRIX,&Neumann));
-      PetscCall(ISDestroy(&rows));
-      PetscCall(MatSetOption(*Neumann,MAT_NEW_NONZERO_ALLOCATION_ERR,PETSC_FALSE));
-      PetscCall(MatZeroRowsIS(*Neumann,is,0.0,NULL,NULL));
-      PetscCall(ISDestroy(&is));
-      if (!qr) {
-        PetscCall(MatTransposeMatMult(*Neumann,*Neumann,MAT_INITIAL_MATRIX,PETSC_DEFAULT,&aux));
-        PetscCall(MatNorm(aux,NORM_FROBENIUS,norm));
-        PetscCall(MatSetOption(aux,MAT_NEW_NONZERO_ALLOCATION_ERR,PETSC_FALSE));
-        PetscCall(MatShift(aux,*norm * 1.0e-8));
-      } else PetscCall(MatCreateNormal(Neumann[0],&aux));
-      PetscCall(MatDestroySubMatrices(1,&Neumann));
-      PetscCall(PCHPDDMSetAuxiliaryMat(pc,cols,aux,NULL,NULL));
-      PetscCall(PCHPDDMHasNeumannMat(pc,PETSC_TRUE));
-      if (!normal) {
-        PCHPDDMCoarseCorrectionType type;
-        PetscCall(PCHPDDMGetCoarseCorrectionType(pc,&type));
-        if (type == PC_HPDDM_COARSE_CORRECTION_DEFLATED) PetscCall(PCHPDDMSetCoarseCorrectionType(pc,PC_HPDDM_COARSE_CORRECTION_BALANCED));
+      flg = PETSC_FALSE;
+      PetscCall(PetscOptionsGetBool(NULL,NULL,"-pc_hidden_setup",&flg,NULL));
+      if (!flg) {
+        PetscCall(MatGetOwnershipRangeColumn(A,&m,&n));
+        PetscCall(ISCreateStride(PETSC_COMM_SELF,n-m,m,1,&cols));
+        PetscCall(MatGetSize(A,&m,NULL));
+        PetscCall(ISCreateStride(PETSC_COMM_SELF,m,0,1,&rows));
+        PetscCall(MatSetOption(A,MAT_SUBMAT_SINGLEIS,PETSC_TRUE));
+        PetscCall(MatCreateSubMatrices(A,1,&rows,&cols,MAT_INITIAL_MATRIX,&Neumann));
+        PetscCall(MatFindZeroRows(*Neumann,&is));
+        PetscCall(MatDestroySubMatrices(1,&Neumann));
+        PetscCall(MatIncreaseOverlap(B,1,&cols,1));
+        PetscCall(MatCreateSubMatrices(A,1,&rows,&cols,MAT_INITIAL_MATRIX,&Neumann));
+        PetscCall(ISDestroy(&rows));
+        PetscCall(MatSetOption(*Neumann,MAT_NEW_NONZERO_ALLOCATION_ERR,PETSC_FALSE));
+        PetscCall(MatZeroRowsIS(*Neumann,is,0.0,NULL,NULL));
+        PetscCall(ISDestroy(&is));
+        if (!qr) {
+          PetscCall(MatTransposeMatMult(*Neumann,*Neumann,MAT_INITIAL_MATRIX,PETSC_DEFAULT,&aux));
+          PetscCall(MatNorm(aux,NORM_FROBENIUS,norm));
+          PetscCall(MatSetOption(aux,MAT_NEW_NONZERO_ALLOCATION_ERR,PETSC_FALSE));
+          PetscCall(MatShift(aux,*norm * 1.0e-8));
+        } else PetscCall(MatCreateNormal(Neumann[0],&aux));
+        PetscCall(MatDestroySubMatrices(1,&Neumann));
+        PetscCall(PCHPDDMSetAuxiliaryMat(pc,cols,aux,NULL,NULL));
+        PetscCall(PCHPDDMHasNeumannMat(pc,PETSC_TRUE));
+        if (!normal) {
+          PCHPDDMCoarseCorrectionType type;
+          PetscCall(PCHPDDMGetCoarseCorrectionType(pc,&type));
+          if (type == PC_HPDDM_COARSE_CORRECTION_DEFLATED) PetscCall(PCHPDDMSetCoarseCorrectionType(pc,PC_HPDDM_COARSE_CORRECTION_BALANCED));
+        }
+        PetscCall(ISDestroy(&cols));
+        PetscCall(MatDestroy(&aux));
       }
-      PetscCall(ISDestroy(&cols));
-      PetscCall(MatDestroy(&aux));
     }
     // end setup phase
     PetscCall(MatDestroy(&B));

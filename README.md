@@ -35,8 +35,8 @@ $ mpirun -np 4 ./sparse_ls -mat_name datafiles/mesh_deform.dat -options_file def
 $ mpirun -np 4 ./sparse_ls -mat_name datafiles/lp_stocfor3.dat -options_file default.rc -pc_type hpddm
 ```
 The command line option `-pc_type` may also be set to `asm`, `hypre` (if PETSc has been configured with `--download-hypre`), `gamg`, `qr` (if configured with `--download-suitesparse`), or whatever the user feels like trying out.  
-All the other matrices are available at the following URL: `http://jolivet.perso.enseeiht.fr/aldaas2021robust/mat_name.ext`, where `mat_name` is any of the identifier from the paper, and `ext` is either `dat` (PETSc binary format) or `mat` (MATLAB binary format).  
-Here are two examples: http://jolivet.perso.enseeiht.fr/aldaas2021robust/Hardesty2.dat and http://jolivet.perso.enseeiht.fr/aldaas2021robust/cont11_l.mat. Matrices supplied through the command-line option `-mat_name` must always be in PETSc binary format. `.mat` files are merely provided for an easier inspection in MATLAB, e.g., using the [spy](https://mathworks.com/help/matlab/ref/spy.html) command.
+All the other matrices are available at the following URL: `http://joliv.et/aldaas2021robust/mat_name.ext`, where `mat_name` is any of the identifier from the paper, and `ext` is either `dat` (PETSc binary format) or `mat` (MATLAB binary format).  
+Here are two examples: http://joliv.et/aldaas2021robust/Hardesty2.dat and http://joliv.et/aldaas2021robust/cont11_l.mat. Matrices supplied through the command-line option `-mat_name` must always be in PETSc binary format. `.mat` files are merely provided for an easier inspection in MATLAB, e.g., using the [spy](https://mathworks.com/help/matlab/ref/spy.html) command.
 
 ## Acknowledgements
 * HPC resources of [TGCC@CEA](http://www-hpc.cea.fr/index-en.htm) under the allocation A0090607519 made by [GENCI](http://www.genci.fr/en)
