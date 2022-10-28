@@ -58,10 +58,9 @@ PC Object: 4 MPI processes
       Cycles per PCApply=1
       Using externally compute Galerkin coarse grid matrices
       GAMG specific options
-        Threshold for dropping small values in graph on each level =   0.   0.   0.   0.  
+        Threshold for dropping small values in graph on each level =   -1.   -1.   -1.   -1.  
         Threshold scaling factor for each level not specified = 1.
         AGG specific options
-          Symmetric graph false
           Number of levels to square graph 1
           Number smoothing steps 1
         Complexity:    grid = 1.05483    operator = 1.08437
