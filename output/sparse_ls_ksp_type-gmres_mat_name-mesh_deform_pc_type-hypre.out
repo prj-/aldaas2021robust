@@ -141,12 +141,12 @@ PC Object: 4 MPI processes
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 9 unused database options. They are:
-Option left: name:-mg_coarse_pc_type value: redundant
-Option left: name:-mg_coarse_redundant_pc_type value: cholesky
-Option left: name:-mg_levels_pc_type value: sor
-Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
-Option left: name:-pc_hpddm_define_subdomains (no value)
-Option left: name:-pc_hpddm_levels_1_eps_nev value: 20
-Option left: name:-pc_hpddm_levels_1_st_share_sub_ksp (no value)
-Option left: name:-pc_hpddm_levels_1_sub_pc_type value: cholesky
-Option left: name:-sub_pc_type value: cholesky
+Option left: name:-mg_coarse_pc_type value: redundant source: file
+Option left: name:-mg_coarse_redundant_pc_type value: cholesky source: file
+Option left: name:-mg_levels_pc_type value: sor source: file
+Option left: name:-pc_hpddm_coarse_pc_type value: cholesky source: file
+Option left: name:-pc_hpddm_define_subdomains (no value) source: file
+Option left: name:-pc_hpddm_levels_1_eps_nev value: 20 source: file
+Option left: name:-pc_hpddm_levels_1_st_share_sub_ksp (no value) source: file
+Option left: name:-pc_hpddm_levels_1_sub_pc_type value: cholesky source: file
+Option left: name:-sub_pc_type value: cholesky source: file
