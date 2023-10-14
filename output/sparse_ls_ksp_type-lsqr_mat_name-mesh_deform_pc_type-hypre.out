@@ -78,7 +78,7 @@ BoomerAMG SOLVER PARAMETERS:
   3 KSP resid norm 2.738311806754e+02 normal eq resid norm 1.336741032081e-01 matrix norm 1.436464461053e+02
   4 KSP resid norm 2.738311133528e+02 normal eq resid norm 7.175975868328e-02 matrix norm 1.436464461053e+02
   5 KSP resid norm 2.738310818605e+02 normal eq resid norm 7.389408569215e-02 matrix norm 1.436464461053e+02
-  6 KSP resid norm 2.738309891065e+02 normal eq resid norm 1.545301693750e-01 matrix norm 1.436464461053e+02
+  6 KSP resid norm 2.738309891065e+02 normal eq resid norm 1.545301693749e-01 matrix norm 1.436464461053e+02
   7 KSP resid norm 2.738307432426e+02 normal eq resid norm 1.309649977951e-01 matrix norm 1.436464461053e+02
   8 KSP resid norm 2.738306875513e+02 normal eq resid norm 4.632105362373e-02 matrix norm 1.436464461053e+02
   9 KSP resid norm 2.738306790515e+02 normal eq resid norm 2.115784739381e-02 matrix norm 1.436464461053e+02
@@ -87,13 +87,16 @@ BoomerAMG SOLVER PARAMETERS:
  12 KSP resid norm 2.738306772801e+02 normal eq resid norm 1.279164620309e-03 matrix norm 1.436464461053e+02
  13 KSP resid norm 2.738306772740e+02 normal eq resid norm 4.545492588476e-04 matrix norm 1.436464461053e+02
  14 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.262067050337e-04 matrix norm 1.436464461053e+02
-Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 14
+ 15 KSP resid norm 2.738306772734e+02 normal eq resid norm 3.172572572874e-05 matrix norm 1.436464461053e+02
+ 16 KSP resid norm 2.738306772734e+02 normal eq resid norm 7.911841282834e-06 matrix norm 1.436464461053e+02
+ 17 KSP resid norm 2.738306772734e+02 normal eq resid norm 2.388182740695e-06 matrix norm 1.436464461053e+02
+  Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 17
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
     using exact matrix norm
   maximum iterations=1000, initial guess is zero
-  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  tolerances: relative=1e-08, absolute=1e-50, divergence=10000.
   left preconditioning
   using UNPRECONDITIONED norm type for convergence test
 PC Object: 4 MPI processes
@@ -117,12 +120,14 @@ PC Object: 4 MPI processes
       Relax on coarse     Gaussian-elimination
       Relax weight  (all)      1.
       Outer relax weight (all) 1.
+      Maximum size of coarsest grid 9
+      Minimum size of coarsest grid 1
       Using CF-relaxation
       Not using more complex smoothers.
       Measure type        local
       Coarsen type        Falgout
       Interpolation type  classical
-      SpGEMM type         cusparse
+      SpGEMM type         hypre
   linear system matrix followed by preconditioner matrix:
   Mat Object: 4 MPI processes
     type: mpiaij
@@ -136,7 +141,7 @@ PC Object: 4 MPI processes
     total: nonzeros=117117, allocated nonzeros=117117
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 8.9510945708924e-05 / 273.83067727340097 = 3.268842870353548e-07
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000001 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 11 unused database options. They are:

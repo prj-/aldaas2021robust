@@ -61,14 +61,14 @@ BoomerAMG SOLVER PARAMETERS:
                              Coarsest grid:   0
 
   0 KSP resid norm 8.836103988221e+01
-  1 KSP resid norm 7.109941691073e+01 normal eq resid norm 9.647686470109e+00 matrix norm 3.062907705646e+04
-Linear solve did not converge due to DIVERGED_BREAKDOWN iterations 1
+  1 KSP resid norm 7.110875194523e+01 normal eq resid norm 9.484096589410e+00 matrix norm 3.062907705646e+04
+  Linear solve did not converge due to DIVERGED_BREAKDOWN iterations 1
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
     using exact matrix norm
   maximum iterations=1000, initial guess is zero
-  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  tolerances: relative=1e-08, absolute=1e-50, divergence=10000.
   left preconditioning
   using UNPRECONDITIONED norm type for convergence test
 PC Object: 4 MPI processes
@@ -92,12 +92,14 @@ PC Object: 4 MPI processes
       Relax on coarse     Gaussian-elimination
       Relax weight  (all)      1.
       Outer relax weight (all) 1.
+      Maximum size of coarsest grid 9
+      Minimum size of coarsest grid 1
       Using CF-relaxation
       Not using more complex smoothers.
       Measure type        local
       Coarsen type        Falgout
       Interpolation type  classical
-      SpGEMM type         cusparse
+      SpGEMM type         hypre
   linear system matrix followed by preconditioner matrix:
   Mat Object: 4 MPI processes
     type: mpiaij
@@ -111,18 +113,18 @@ PC Object: 4 MPI processes
     total: nonzeros=223395, allocated nonzeros=223395
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 3486.075669 / 71.099417 = 49.031002
+||A^T(Ax-b)|| / ||Ax-b|| = 3465.678169 / 71.108752 = 48.737716
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 11 unused database options. They are:
-Option left: name:-mg_coarse_pc_type value: redundant
-Option left: name:-mg_coarse_redundant_pc_type value: cholesky
-Option left: name:-mg_levels_pc_type value: sor
-Option left: name:-pc_asm_type value: basic
-Option left: name:-pc_hpddm_coarse_pc_type value: cholesky
-Option left: name:-pc_hpddm_define_subdomains (no value)
-Option left: name:-pc_hpddm_levels_1_eps_nev value: 20
-Option left: name:-pc_hpddm_levels_1_pc_asm_type value: basic
-Option left: name:-pc_hpddm_levels_1_st_share_sub_ksp (no value)
-Option left: name:-pc_hpddm_levels_1_sub_pc_type value: cholesky
-Option left: name:-sub_pc_type value: cholesky
+Option left: name:-mg_coarse_pc_type value: redundant source: file
+Option left: name:-mg_coarse_redundant_pc_type value: cholesky source: file
+Option left: name:-mg_levels_pc_type value: sor source: file
+Option left: name:-pc_asm_type value: basic source: file
+Option left: name:-pc_hpddm_coarse_pc_type value: cholesky source: file
+Option left: name:-pc_hpddm_define_subdomains (no value) source: file
+Option left: name:-pc_hpddm_levels_1_eps_nev value: 20 source: file
+Option left: name:-pc_hpddm_levels_1_pc_asm_type value: basic source: file
+Option left: name:-pc_hpddm_levels_1_st_share_sub_ksp (no value) source: file
+Option left: name:-pc_hpddm_levels_1_sub_pc_type value: cholesky source: file
+Option left: name:-sub_pc_type value: cholesky source: file

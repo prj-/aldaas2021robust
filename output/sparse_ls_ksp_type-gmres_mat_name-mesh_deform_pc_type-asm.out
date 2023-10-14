@@ -7,20 +7,20 @@
   6 KSP Residual norm 1.582520107677e-02 
   7 KSP Residual norm 7.543579152683e-03 
   8 KSP Residual norm 1.892893259100e-03 
-  9 KSP Residual norm 5.098805256732e-04 
+  9 KSP Residual norm 5.098805256731e-04 
  10 KSP Residual norm 1.135567844071e-04 
- 11 KSP Residual norm 3.652242744326e-05 
- 12 KSP Residual norm 8.279969880940e-06 
- 13 KSP Residual norm 2.391625656356e-06 
- 14 KSP Residual norm 9.573889596060e-07 
- 15 KSP Residual norm 3.072045692561e-07 
+ 11 KSP Residual norm 3.652242744329e-05 
+ 12 KSP Residual norm 8.279969881087e-06 
+ 13 KSP Residual norm 2.391625656231e-06 
+ 14 KSP Residual norm 9.573889596571e-07 
+ 15 KSP Residual norm 3.072045693870e-07 
 Linear solve converged due to CONVERGED_RTOL iterations 15
 KSP Object: 4 MPI processes
   type: gmres
     restart=100, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
     happy breakdown tolerance 1e-30
   maximum iterations=1000, initial guess is zero
-  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  tolerances: relative=1e-08, absolute=1e-50, divergence=10000.
   right preconditioning
   using UNPRECONDITIONED norm type for convergence test
 PC Object: 4 MPI processes
@@ -29,32 +29,32 @@ PC Object: 4 MPI processes
     restriction/interpolation type - RESTRICT
     Local solver information for first block is in the following KSP and PC objects on rank 0:
     Use -ksp_view ::ascii_info_detail to display information for all blocks
-  KSP Object: (sub_) 1 MPI process
-    type: preonly
-    maximum iterations=10000, initial guess is zero
-    tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
-    left preconditioning
-    using NONE norm type for convergence test
-  PC Object: (sub_) 1 MPI process
-    type: cholesky
-      out-of-place factorization
-      tolerance for zero pivot 2.22045e-14
-      matrix ordering: nd
-      factor fill ratio given 5., needed 8.49166
-        Factored matrix follows:
-          Mat Object: (sub_) 1 MPI process
-            type: seqsbaij
-            rows=2631, cols=2631
-            package used to perform factorization: petsc
-            total: nonzeros=146651, allocated nonzeros=146651
-                block size is 1
-    linear system matrix = precond matrix:
-    Mat Object: (sub_) 1 MPI process
-      type: seqaij
-      rows=2631, cols=2631
-      total: nonzeros=31909, allocated nonzeros=31909
-      total number of mallocs used during MatSetValues calls=0
-        not using I-node routines
+    KSP Object: (sub_) 1 MPI process
+      type: preonly
+      maximum iterations=10000, initial guess is zero
+      tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
+      left preconditioning
+      using NONE norm type for convergence test
+    PC Object: (sub_) 1 MPI process
+      type: cholesky
+        out-of-place factorization
+        tolerance for zero pivot 2.22045e-14
+        matrix ordering: nd
+        factor fill ratio given 5., needed 8.49166
+          Factored matrix follows:
+            Mat Object: (sub_) 1 MPI process
+              type: seqsbaij
+              rows=2631, cols=2631
+              package used to perform factorization: petsc
+              total: nonzeros=146651, allocated nonzeros=146651
+                  block size is 1
+      linear system matrix = precond matrix:
+      Mat Object: (sub_) 1 MPI process
+        type: seqaij
+        rows=2631, cols=2631
+        total: nonzeros=31909, allocated nonzeros=31909
+        total number of mallocs used during MatSetValues calls=0
+          not using I-node routines
   linear system matrix followed by preconditioner matrix:
   Mat Object: 4 MPI processes
     type: normal

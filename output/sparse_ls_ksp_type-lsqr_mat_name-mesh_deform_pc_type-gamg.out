@@ -1,38 +1,50 @@
   0 KSP resid norm 2.793108625211e+02
-  1 KSP resid norm 2.740090013078e+02 normal eq resid norm 6.872062493577e+00 matrix norm 1.436464461053e+02
-  2 KSP resid norm 2.738801879682e+02 normal eq resid norm 2.235150521792e+00 matrix norm 1.436464461053e+02
-  3 KSP resid norm 2.738479631432e+02 normal eq resid norm 1.481828941404e+00 matrix norm 1.436464461053e+02
-  4 KSP resid norm 2.738388266572e+02 normal eq resid norm 9.672138212950e-01 matrix norm 1.436464461053e+02
-  5 KSP resid norm 2.738338914899e+02 normal eq resid norm 5.798956615799e-01 matrix norm 1.436464461053e+02
-  6 KSP resid norm 2.738321362550e+02 normal eq resid norm 4.104913293093e-01 matrix norm 1.436464461053e+02
-  7 KSP resid norm 2.738313552051e+02 normal eq resid norm 2.585269165658e-01 matrix norm 1.436464461053e+02
-  8 KSP resid norm 2.738309869273e+02 normal eq resid norm 1.716860344369e-01 matrix norm 1.436464461053e+02
-  9 KSP resid norm 2.738308421319e+02 normal eq resid norm 1.195386898219e-01 matrix norm 1.436464461053e+02
- 10 KSP resid norm 2.738307706156e+02 normal eq resid norm 7.800001748003e-02 matrix norm 1.436464461053e+02
- 11 KSP resid norm 2.738307333923e+02 normal eq resid norm 6.393254872955e-02 matrix norm 1.436464461053e+02
- 12 KSP resid norm 2.738307107299e+02 normal eq resid norm 5.084143782175e-02 matrix norm 1.436464461053e+02
- 13 KSP resid norm 2.738306946719e+02 normal eq resid norm 4.010718447765e-02 matrix norm 1.436464461053e+02
- 14 KSP resid norm 2.738306860491e+02 normal eq resid norm 2.809344601012e-02 matrix norm 1.436464461053e+02
- 15 KSP resid norm 2.738306818372e+02 normal eq resid norm 2.120563845489e-02 matrix norm 1.436464461053e+02
- 16 KSP resid norm 2.738306792536e+02 normal eq resid norm 1.459139959443e-02 matrix norm 1.436464461053e+02
- 17 KSP resid norm 2.738306782142e+02 normal eq resid norm 9.812194298988e-03 matrix norm 1.436464461053e+02
- 18 KSP resid norm 2.738306777246e+02 normal eq resid norm 6.476000185239e-03 matrix norm 1.436464461053e+02
- 19 KSP resid norm 2.738306775046e+02 normal eq resid norm 4.524284787732e-03 matrix norm 1.436464461053e+02
- 20 KSP resid norm 2.738306774008e+02 normal eq resid norm 3.132030589516e-03 matrix norm 1.436464461053e+02
- 21 KSP resid norm 2.738306773437e+02 normal eq resid norm 2.475640040145e-03 matrix norm 1.436464461053e+02
- 22 KSP resid norm 2.738306773086e+02 normal eq resid norm 1.807369959599e-03 matrix norm 1.436464461053e+02
- 23 KSP resid norm 2.738306772922e+02 normal eq resid norm 1.245317240796e-03 matrix norm 1.436464461053e+02
- 24 KSP resid norm 2.738306772836e+02 normal eq resid norm 9.242924682227e-04 matrix norm 1.436464461053e+02
- 25 KSP resid norm 2.738306772786e+02 normal eq resid norm 7.083398729111e-04 matrix norm 1.436464461053e+02
- 26 KSP resid norm 2.738306772760e+02 normal eq resid norm 5.077200062435e-04 matrix norm 1.436464461053e+02
- 27 KSP resid norm 2.738306772745e+02 normal eq resid norm 3.591014614113e-04 matrix norm 1.436464461053e+02
-Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 27
+  1 KSP resid norm 2.740016226884e+02 normal eq resid norm 6.842403230144e+00 matrix norm 1.436464461053e+02
+  2 KSP resid norm 2.738742271479e+02 normal eq resid norm 2.221975556762e+00 matrix norm 1.436464461053e+02
+  3 KSP resid norm 2.738439035641e+02 normal eq resid norm 1.426984698352e+00 matrix norm 1.436464461053e+02
+  4 KSP resid norm 2.738360529732e+02 normal eq resid norm 8.357754717810e-01 matrix norm 1.436464461053e+02
+  5 KSP resid norm 2.738325646882e+02 normal eq resid norm 4.694711725398e-01 matrix norm 1.436464461053e+02
+  6 KSP resid norm 2.738314738254e+02 normal eq resid norm 3.117658158429e-01 matrix norm 1.436464461053e+02
+  7 KSP resid norm 2.738310353082e+02 normal eq resid norm 1.890294092937e-01 matrix norm 1.436464461053e+02
+  8 KSP resid norm 2.738308434082e+02 normal eq resid norm 1.202678132259e-01 matrix norm 1.436464461053e+02
+  9 KSP resid norm 2.738307731858e+02 normal eq resid norm 8.763748269026e-02 matrix norm 1.436464461053e+02
+ 10 KSP resid norm 2.738307297876e+02 normal eq resid norm 6.328593122982e-02 matrix norm 1.436464461053e+02
+ 11 KSP resid norm 2.738307061212e+02 normal eq resid norm 4.845335401708e-02 matrix norm 1.436464461053e+02
+ 12 KSP resid norm 2.738306947490e+02 normal eq resid norm 3.372023216992e-02 matrix norm 1.436464461053e+02
+ 13 KSP resid norm 2.738306877994e+02 normal eq resid norm 2.627168409132e-02 matrix norm 1.436464461053e+02
+ 14 KSP resid norm 2.738306837898e+02 normal eq resid norm 2.185006600277e-02 matrix norm 1.436464461053e+02
+ 15 KSP resid norm 2.738306807607e+02 normal eq resid norm 1.816243703766e-02 matrix norm 1.436464461053e+02
+ 16 KSP resid norm 2.738306788581e+02 normal eq resid norm 1.333051601762e-02 matrix norm 1.436464461053e+02
+ 17 KSP resid norm 2.738306779391e+02 normal eq resid norm 9.108429986935e-03 matrix norm 1.436464461053e+02
+ 18 KSP resid norm 2.738306775436e+02 normal eq resid norm 5.451192677491e-03 matrix norm 1.436464461053e+02
+ 19 KSP resid norm 2.738306774000e+02 normal eq resid norm 3.515872750815e-03 matrix norm 1.436464461053e+02
+ 20 KSP resid norm 2.738306773370e+02 normal eq resid norm 2.409059518829e-03 matrix norm 1.436464461053e+02
+ 21 KSP resid norm 2.738306773071e+02 normal eq resid norm 1.575423481012e-03 matrix norm 1.436464461053e+02
+ 22 KSP resid norm 2.738306772944e+02 normal eq resid norm 1.079548559194e-03 matrix norm 1.436464461053e+02
+ 23 KSP resid norm 2.738306772881e+02 normal eq resid norm 8.325498225221e-04 matrix norm 1.436464461053e+02
+ 24 KSP resid norm 2.738306772837e+02 normal eq resid norm 7.175103318665e-04 matrix norm 1.436464461053e+02
+ 25 KSP resid norm 2.738306772803e+02 normal eq resid norm 6.474134530380e-04 matrix norm 1.436464461053e+02
+ 26 KSP resid norm 2.738306772779e+02 normal eq resid norm 5.187987568679e-04 matrix norm 1.436464461053e+02
+ 27 KSP resid norm 2.738306772760e+02 normal eq resid norm 4.607469912288e-04 matrix norm 1.436464461053e+02
+ 28 KSP resid norm 2.738306772748e+02 normal eq resid norm 3.594568401645e-04 matrix norm 1.436464461053e+02
+ 29 KSP resid norm 2.738306772740e+02 normal eq resid norm 2.870368822100e-04 matrix norm 1.436464461053e+02
+ 30 KSP resid norm 2.738306772736e+02 normal eq resid norm 1.935162569910e-04 matrix norm 1.436464461053e+02
+ 31 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.079648991055e-04 matrix norm 1.436464461053e+02
+ 32 KSP resid norm 2.738306772734e+02 normal eq resid norm 5.556838144739e-05 matrix norm 1.436464461053e+02
+ 33 KSP resid norm 2.738306772734e+02 normal eq resid norm 3.498042572223e-05 matrix norm 1.436464461053e+02
+ 34 KSP resid norm 2.738306772734e+02 normal eq resid norm 2.394848013717e-05 matrix norm 1.436464461053e+02
+ 35 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.734595776839e-05 matrix norm 1.436464461053e+02
+ 36 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.072069157015e-05 matrix norm 1.436464461053e+02
+ 37 KSP resid norm 2.738306772734e+02 normal eq resid norm 6.150923322753e-06 matrix norm 1.436464461053e+02
+ 38 KSP resid norm 2.738306772734e+02 normal eq resid norm 3.394780519929e-06 matrix norm 1.436464461053e+02
+ 39 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.996531544043e-06 matrix norm 1.436464461053e+02
+Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 39
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
     using exact matrix norm
   maximum iterations=1000, initial guess is zero
-  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  tolerances: relative=1e-08, absolute=1e-50, divergence=10000.
   left preconditioning
   using UNPRECONDITIONED norm type for convergence test
 PC Object: 4 MPI processes
@@ -44,14 +56,23 @@ PC Object: 4 MPI processes
         Threshold for dropping small values in graph on each level =   -1.   -1.   -1.   -1.  
         Threshold scaling factor for each level not specified = 1.
         AGG specific options
-          Number of levels to square graph 1
-          Number smoothing steps 1
-        Complexity:    grid = 1.05483    operator = 1.08437
+          Number of levels of aggressive coarsening 1
+          Square graph aggressive coarsening
+          MatCoarsen Object: 4 MPI processes
+            type: misk
+          Number smoothing steps to construct prolongation 1
+        Complexity:    grid = 1.05366    operator = 1.07533
+        Per-level complexity: op = operator, int = interpolation
+            #equations  | #active PEs | avg nnz/row op | avg nnz/row int
+                  4            1              4                0
+                 51            1             26                4
+                449            4             17                5
+               9393            4             13                3
   Coarse grid solver -- level 0 -------------------------------
     KSP Object: (mg_coarse_) 4 MPI processes
       type: preonly
       maximum iterations=10000, initial guess is zero
-      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+      tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
       left preconditioning
       using NONE norm type for convergence test
     PC Object: (mg_coarse_) 4 MPI processes
@@ -60,7 +81,7 @@ PC Object: 4 MPI processes
         KSP Object: (mg_coarse_redundant_) 1 MPI process
           type: preonly
           maximum iterations=10000, initial guess is zero
-          tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+          tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
           left preconditioning
           using NONE norm type for convergence test
         PC Object: (mg_coarse_redundant_) 1 MPI process
@@ -72,41 +93,43 @@ PC Object: 4 MPI processes
               Factored matrix follows:
                 Mat Object: (mg_coarse_redundant_) 1 MPI process
                   type: seqsbaij
-                  rows=6, cols=6
+                  rows=4, cols=4
                   package used to perform factorization: petsc
-                  total: nonzeros=21, allocated nonzeros=21
+                  total: nonzeros=10, allocated nonzeros=10
                       block size is 1
           linear system matrix = precond matrix:
           Mat Object: 1 MPI process
             type: seqaij
-            rows=6, cols=6
-            total: nonzeros=36, allocated nonzeros=36
+            rows=4, cols=4
+            total: nonzeros=16, allocated nonzeros=16
             total number of mallocs used during MatSetValues calls=0
-              using I-node routines: found 2 nodes, limit used is 5
+              using I-node routines: found 1 nodes, limit used is 5
       linear system matrix = precond matrix:
       Mat Object: 4 MPI processes
         type: mpiaij
-        rows=6, cols=6
-        total: nonzeros=36, allocated nonzeros=36
+        rows=4, cols=4
+        total: nonzeros=16, allocated nonzeros=16
         total number of mallocs used during MatSetValues calls=0
-          using I-node (on process 0) routines: found 2 nodes, limit used is 5
+          using nonscalable MatPtAP() implementation
+          using I-node (on process 0) routines: found 1 nodes, limit used is 5
   Down solver (pre-smoother) on level 1 -------------------------------
     KSP Object: (mg_levels_1_) 4 MPI processes
       type: chebyshev
-        eigenvalue targets used: min 0.117766, max 1.29543
-        eigenvalues estimated via gmres: min 0.399023, max 1.17766
+        Chebyshev polynomial of first kind
+        eigenvalue targets used: min 0.0999903, max 1.09989
+        eigenvalues estimated via gmres: min 0.121506, max 0.999903
         eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
         KSP Object: (mg_levels_1_esteig_) 4 MPI processes
           type: gmres
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
             happy breakdown tolerance 1e-30
           maximum iterations=10, initial guess is zero
-          tolerances:  relative=1e-12, absolute=1e-50, divergence=10000.
+          tolerances: relative=1e-12, absolute=1e-50, divergence=10000.
           left preconditioning
           using PRECONDITIONED norm type for convergence test
-        estimating eigenvalues using noisy right hand side
+        estimating eigenvalues using a noisy random number generated right-hand side
       maximum iterations=2, nonzero initial guess
-      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+      tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
       left preconditioning
       using NONE norm type for convergence test
     PC Object: (mg_levels_1_) 4 MPI processes
@@ -115,28 +138,30 @@ PC Object: 4 MPI processes
       linear system matrix = precond matrix:
       Mat Object: 4 MPI processes
         type: mpiaij
-        rows=81, cols=81
-        total: nonzeros=3043, allocated nonzeros=3043
+        rows=51, cols=51
+        total: nonzeros=1289, allocated nonzeros=1289
         total number of mallocs used during MatSetValues calls=0
+          using nonscalable MatPtAP() implementation
           not using I-node (on process 0) routines
   Up solver (post-smoother) same as down solver (pre-smoother)
   Down solver (pre-smoother) on level 2 -------------------------------
     KSP Object: (mg_levels_2_) 4 MPI processes
       type: chebyshev
-        eigenvalue targets used: min 0.127826, max 1.40609
-        eigenvalues estimated via gmres: min 0.0541265, max 1.27826
+        Chebyshev polynomial of first kind
+        eigenvalue targets used: min 0.135508, max 1.49059
+        eigenvalues estimated via gmres: min 0.0254883, max 1.35508
         eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
         KSP Object: (mg_levels_2_esteig_) 4 MPI processes
           type: gmres
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
             happy breakdown tolerance 1e-30
           maximum iterations=10, initial guess is zero
-          tolerances:  relative=1e-12, absolute=1e-50, divergence=10000.
+          tolerances: relative=1e-12, absolute=1e-50, divergence=10000.
           left preconditioning
           using PRECONDITIONED norm type for convergence test
-        estimating eigenvalues using noisy right hand side
+        estimating eigenvalues using a noisy random number generated right-hand side
       maximum iterations=2, nonzero initial guess
-      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+      tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
       left preconditioning
       using NONE norm type for convergence test
     PC Object: (mg_levels_2_) 4 MPI processes
@@ -145,8 +170,8 @@ PC Object: 4 MPI processes
       linear system matrix = precond matrix:
       Mat Object: 4 MPI processes
         type: mpiaij
-        rows=428, cols=428
-        total: nonzeros=6802, allocated nonzeros=6802
+        rows=449, cols=449
+        total: nonzeros=7517, allocated nonzeros=7517
         total number of mallocs used during MatSetValues calls=0
           using nonscalable MatPtAP() implementation
           not using I-node (on process 0) routines
@@ -154,6 +179,7 @@ PC Object: 4 MPI processes
   Down solver (pre-smoother) on level 3 -------------------------------
     KSP Object: (mg_levels_3_) 4 MPI processes
       type: chebyshev
+        Chebyshev polynomial of first kind
         eigenvalue targets used: min 0.164944, max 1.81438
         eigenvalues estimated via gmres: min 0.0215991, max 1.64944
         eigenvalues estimated using gmres with transform: [0. 0.1; 0. 1.1]
@@ -162,12 +188,12 @@ PC Object: 4 MPI processes
             restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
             happy breakdown tolerance 1e-30
           maximum iterations=10, initial guess is zero
-          tolerances:  relative=1e-12, absolute=1e-50, divergence=10000.
+          tolerances: relative=1e-12, absolute=1e-50, divergence=10000.
           left preconditioning
           using PRECONDITIONED norm type for convergence test
-        estimating eigenvalues using noisy right hand side
+        estimating eigenvalues using a noisy random number generated right-hand side
       maximum iterations=2, nonzero initial guess
-      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+      tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
       left preconditioning
       using NONE norm type for convergence test
     PC Object: (mg_levels_3_) 4 MPI processes
@@ -194,7 +220,7 @@ PC Object: 4 MPI processes
     total: nonzeros=117117, allocated nonzeros=117117
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 0.000444 / 273.830677 = 0.000002
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000002 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 9 unused database options. They are:

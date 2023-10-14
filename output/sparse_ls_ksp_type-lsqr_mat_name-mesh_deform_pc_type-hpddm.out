@@ -1,20 +1,24 @@
   0 KSP resid norm 2.793108625211e+02
-  1 KSP resid norm 2.741426270672e+02 normal eq resid norm 1.773872014627e+01 matrix norm 1.436464461053e+02
-  2 KSP resid norm 2.738379512595e+02 normal eq resid norm 3.302953403727e+00 matrix norm 1.436464461053e+02
-  3 KSP resid norm 2.738307525503e+02 normal eq resid norm 2.389092193281e-01 matrix norm 1.436464461053e+02
-  4 KSP resid norm 2.738306820903e+02 normal eq resid norm 6.685981865589e-02 matrix norm 1.436464461053e+02
-  5 KSP resid norm 2.738306779231e+02 normal eq resid norm 2.180272339416e-02 matrix norm 1.436464461053e+02
-  6 KSP resid norm 2.738306773298e+02 normal eq resid norm 7.238939301400e-03 matrix norm 1.436464461053e+02
-  7 KSP resid norm 2.738306772789e+02 normal eq resid norm 2.160157600623e-03 matrix norm 1.436464461053e+02
-  8 KSP resid norm 2.738306772738e+02 normal eq resid norm 6.252022484516e-04 matrix norm 1.436464461053e+02
-  9 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.819154112015e-04 matrix norm 1.436464461053e+02
-Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 9
+  1 KSP resid norm 2.742026603883e+02 normal eq resid norm 1.931965937253e+01 matrix norm 1.436464461053e+02
+  2 KSP resid norm 2.738429267944e+02 normal eq resid norm 4.234875120679e+00 matrix norm 1.436464461053e+02
+  3 KSP resid norm 2.738307589728e+02 normal eq resid norm 2.520571333009e-01 matrix norm 1.436464461053e+02
+  4 KSP resid norm 2.738306807380e+02 normal eq resid norm 6.371584515213e-02 matrix norm 1.436464461053e+02
+  5 KSP resid norm 2.738306775630e+02 normal eq resid norm 1.475198559395e-02 matrix norm 1.436464461053e+02
+  6 KSP resid norm 2.738306772917e+02 normal eq resid norm 3.937298074111e-03 matrix norm 1.436464461053e+02
+  7 KSP resid norm 2.738306772752e+02 normal eq resid norm 1.258112759767e-03 matrix norm 1.436464461053e+02
+  8 KSP resid norm 2.738306772735e+02 normal eq resid norm 4.039967659749e-04 matrix norm 1.436464461053e+02
+  9 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.200930498519e-04 matrix norm 1.436464461053e+02
+ 10 KSP resid norm 2.738306772734e+02 normal eq resid norm 3.472057597908e-05 matrix norm 1.436464461053e+02
+ 11 KSP resid norm 2.738306772734e+02 normal eq resid norm 7.558704489372e-06 matrix norm 1.436464461053e+02
+ 12 KSP resid norm 2.738306772734e+02 normal eq resid norm 2.798364415570e-06 matrix norm 1.436464461053e+02
+ 13 KSP resid norm 2.738306772734e+02 normal eq resid norm 7.514977893715e-07 matrix norm 1.436464461053e+02
+  Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 13
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
     using exact matrix norm
   maximum iterations=1000, initial guess is zero
-  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  tolerances: relative=1e-08, absolute=1e-50, divergence=10000.
   left preconditioning
   using UNPRECONDITIONED norm type for convergence test
 PC Object: 4 MPI processes
@@ -28,7 +32,7 @@ PC Object: 4 MPI processes
   KSP Object: (pc_hpddm_levels_1_) 4 MPI processes
     type: preonly
     maximum iterations=10000, initial guess is zero
-    tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+    tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
     left preconditioning
     using NONE norm type for convergence test
   PC Object: (pc_hpddm_levels_1_) 4 MPI processes
@@ -53,32 +57,32 @@ PC Object: 4 MPI processes
       restriction/interpolation type - BASIC
       Local solver information for first block is in the following KSP and PC objects on rank 0:
       Use -pc_hpddm_levels_1_ksp_view ::ascii_info_detail to display information for all blocks
-    KSP Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-      type: preonly
-      maximum iterations=10000, initial guess is zero
-      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
-      left preconditioning
-      using NONE norm type for convergence test
-    PC Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-      type: cholesky
-        out-of-place factorization
-        tolerance for zero pivot 2.22045e-14
-        matrix ordering: nd
-        factor fill ratio given 5., needed 8.49166
-          Factored matrix follows:
-            Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-              type: seqsbaij
-              rows=2631, cols=2631
-              package used to perform factorization: petsc
-              total: nonzeros=146651, allocated nonzeros=146651
-                  block size is 1
-      linear system matrix = precond matrix:
-      Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-        type: seqaij
-        rows=2631, cols=2631
-        total: nonzeros=31909, allocated nonzeros=31909
-        total number of mallocs used during MatSetValues calls=0
-          not using I-node routines
+      KSP Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+        type: preonly
+        maximum iterations=10000, initial guess is zero
+        tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
+        left preconditioning
+        using NONE norm type for convergence test
+      PC Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+        type: cholesky
+          out-of-place factorization
+          tolerance for zero pivot 2.22045e-14
+          matrix ordering: nd
+          factor fill ratio given 5., needed 8.49166
+            Factored matrix follows:
+              Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+                type: seqsbaij
+                rows=2631, cols=2631
+                package used to perform factorization: petsc
+                total: nonzeros=146651, allocated nonzeros=146651
+                    block size is 1
+        linear system matrix = precond matrix:
+        Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+          type: seqaij
+          rows=2631, cols=2631
+          total: nonzeros=31909, allocated nonzeros=31909
+          total number of mallocs used during MatSetValues calls=0
+            not using I-node routines
     linear system matrix followed by preconditioner matrix:
     Mat Object: 4 MPI processes
       type: mpiaij
@@ -95,7 +99,7 @@ PC Object: 4 MPI processes
     KSP Object: (pc_hpddm_coarse_) 1 MPI process
       type: preonly
       maximum iterations=10000, initial guess is zero
-      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+      tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
       left preconditioning
       using NONE norm type for convergence test
     PC Object: (pc_hpddm_coarse_) 1 MPI process
@@ -131,7 +135,7 @@ PC Object: 4 MPI processes
     total: nonzeros=117117, allocated nonzeros=117117
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 7.663073840910661e-05 / 273.8306772733685 = 2.7984716384645685e-07
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000001 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 6 unused database options. They are:

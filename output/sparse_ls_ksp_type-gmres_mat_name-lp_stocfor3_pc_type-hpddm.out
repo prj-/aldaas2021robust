@@ -1,24 +1,24 @@
   0 KSP Residual norm 3.445841955799e+04 
-  1 KSP Residual norm 9.694170651583e+01 
-  2 KSP Residual norm 2.619049512188e+01 
-  3 KSP Residual norm 2.027387951242e+01 
-  4 KSP Residual norm 1.490809119360e+01 
-  5 KSP Residual norm 4.479210233682e+00 
-  6 KSP Residual norm 3.548290010223e+00 
-  7 KSP Residual norm 3.872846777581e-01 
-  8 KSP Residual norm 1.326497470692e-01 
-  9 KSP Residual norm 4.525287289416e-02 
- 10 KSP Residual norm 1.322040759937e-02 
- 11 KSP Residual norm 7.049529207140e-03 
- 12 KSP Residual norm 3.207462789683e-03 
- 13 KSP Residual norm 2.043765057448e-04 
+  1 KSP Residual norm 9.882967944423e+01 
+  2 KSP Residual norm 2.394181689490e+01 
+  3 KSP Residual norm 1.793752820981e+01 
+  4 KSP Residual norm 1.374027847458e+01 
+  5 KSP Residual norm 4.960251279160e+00 
+  6 KSP Residual norm 4.237467141877e+00 
+  7 KSP Residual norm 5.016577535353e-01 
+  8 KSP Residual norm 1.404013910257e-01 
+  9 KSP Residual norm 6.110215708289e-02 
+ 10 KSP Residual norm 1.523457016341e-02 
+ 11 KSP Residual norm 7.404584428430e-03 
+ 12 KSP Residual norm 3.096433724368e-03 
+ 13 KSP Residual norm 1.968302557833e-04 
 Linear solve converged due to CONVERGED_RTOL iterations 13
 KSP Object: 4 MPI processes
   type: gmres
     restart=100, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
     happy breakdown tolerance 1e-30
   maximum iterations=1000, initial guess is zero
-  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  tolerances: relative=1e-08, absolute=1e-50, divergence=10000.
   right preconditioning
   using UNPRECONDITIONED norm type for convergence test
 PC Object: 4 MPI processes
@@ -32,7 +32,7 @@ PC Object: 4 MPI processes
   KSP Object: (pc_hpddm_levels_1_) 4 MPI processes
     type: preonly
     maximum iterations=10000, initial guess is zero
-    tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+    tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
     left preconditioning
     using NONE norm type for convergence test
   PC Object: (pc_hpddm_levels_1_) 4 MPI processes
@@ -54,32 +54,32 @@ PC Object: 4 MPI processes
       restriction/interpolation type - RESTRICT
       Local solver information for first block is in the following KSP and PC objects on rank 0:
       Use -pc_hpddm_levels_1_ksp_view ::ascii_info_detail to display information for all blocks
-    KSP Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-      type: preonly
-      maximum iterations=10000, initial guess is zero
-      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
-      left preconditioning
-      using NONE norm type for convergence test
-    PC Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-      type: cholesky
-        out-of-place factorization
-        tolerance for zero pivot 2.22045e-14
-        matrix ordering: nd
-        factor fill ratio given 5., needed 3.37836
-          Factored matrix follows:
-            Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-              type: seqsbaij
-              rows=4176, cols=4176
-              package used to perform factorization: petsc
-              total: nonzeros=101246, allocated nonzeros=101246
-                  block size is 1
-      linear system matrix = precond matrix:
-      Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-        type: seqaij
-        rows=4176, cols=4176
-        total: nonzeros=55762, allocated nonzeros=55762
-        total number of mallocs used during MatSetValues calls=0
-          not using I-node routines
+      KSP Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+        type: preonly
+        maximum iterations=10000, initial guess is zero
+        tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
+        left preconditioning
+        using NONE norm type for convergence test
+      PC Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+        type: cholesky
+          out-of-place factorization
+          tolerance for zero pivot 2.22045e-14
+          matrix ordering: nd
+          factor fill ratio given 5., needed 3.37836
+            Factored matrix follows:
+              Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+                type: seqsbaij
+                rows=4176, cols=4176
+                package used to perform factorization: petsc
+                total: nonzeros=101246, allocated nonzeros=101246
+                    block size is 1
+        linear system matrix = precond matrix:
+        Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+          type: seqaij
+          rows=4176, cols=4176
+          total: nonzeros=55762, allocated nonzeros=55762
+          total number of mallocs used during MatSetValues calls=0
+            not using I-node routines
     linear system matrix followed by preconditioner matrix:
     Mat Object: 4 MPI processes
       type: normal
@@ -93,7 +93,7 @@ PC Object: 4 MPI processes
     KSP Object: (pc_hpddm_coarse_) 1 MPI process
       type: preonly
       maximum iterations=10000, initial guess is zero
-      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+      tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
       left preconditioning
       using NONE norm type for convergence test
     PC Object: (pc_hpddm_coarse_) 1 MPI process
@@ -126,7 +126,7 @@ PC Object: 4 MPI processes
     total: nonzeros=223395, allocated nonzeros=223395
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 0.000195 / 40.197137 = 0.000005
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000197 / 40.197137 = 0.000005
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 5 unused database options. They are:

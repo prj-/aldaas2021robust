@@ -1,60 +1,56 @@
-  0 KSP Residual norm 3.445841955799e+04 
-  1 KSP Residual norm 1.311634499686e+02 
-  2 KSP Residual norm 3.115647932696e+01 
-  3 KSP Residual norm 2.029264535384e+01 
-  4 KSP Residual norm 1.299912896120e+01 
-  5 KSP Residual norm 8.652002917560e+00 
-  6 KSP Residual norm 5.072787176514e+00 
-  7 KSP Residual norm 4.944343936049e+00 
-  8 KSP Residual norm 4.888450327039e+00 
-  9 KSP Residual norm 4.104078708044e+00 
- 10 KSP Residual norm 3.960537634209e+00 
- 11 KSP Residual norm 2.055718367915e+00 
- 12 KSP Residual norm 1.420337037922e+00 
- 13 KSP Residual norm 8.114598624478e-01 
- 14 KSP Residual norm 6.852811299713e-01 
- 15 KSP Residual norm 5.796455362383e-01 
- 16 KSP Residual norm 4.414964924933e-01 
- 17 KSP Residual norm 3.447358221139e-01 
- 18 KSP Residual norm 2.760846999631e-01 
- 19 KSP Residual norm 1.220107655545e-01 
- 20 KSP Residual norm 1.101297669723e-01 
- 21 KSP Residual norm 9.778764873426e-02 
- 22 KSP Residual norm 8.455004323066e-02 
- 23 KSP Residual norm 7.183731423448e-02 
- 24 KSP Residual norm 6.942423723533e-02 
- 25 KSP Residual norm 5.255339825053e-02 
- 26 KSP Residual norm 2.343841171472e-02 
- 27 KSP Residual norm 1.565386350525e-02 
- 28 KSP Residual norm 1.045445547806e-02 
- 29 KSP Residual norm 8.437047452012e-03 
- 30 KSP Residual norm 6.854803325981e-03 
- 31 KSP Residual norm 2.737774346110e-03 
- 32 KSP Residual norm 1.601654672517e-03 
- 33 KSP Residual norm 1.470144870121e-03 
- 34 KSP Residual norm 1.367036411543e-03 
- 35 KSP Residual norm 1.111872005042e-03 
- 36 KSP Residual norm 8.639410726495e-04 
- 37 KSP Residual norm 7.789646632753e-04 
- 38 KSP Residual norm 6.989029556357e-04 
- 39 KSP Residual norm 6.220800598506e-04 
- 40 KSP Residual norm 5.677234892591e-04 
- 41 KSP Residual norm 5.200867271344e-04 
- 42 KSP Residual norm 4.811331732167e-04 
- 43 KSP Residual norm 4.497341050626e-04 
- 44 KSP Residual norm 4.235532609886e-04 
- 45 KSP Residual norm 4.015204955672e-04 
- 46 KSP Residual norm 3.825785529012e-04 
- 47 KSP Residual norm 3.660947304498e-04 
- 48 KSP Residual norm 3.515703437395e-04 
- 49 KSP Residual norm 3.386488018937e-04 
-Linear solve converged due to CONVERGED_RTOL iterations 49
+  0 KSP Residual norm 3.445841955799e+04
+  1 KSP Residual norm 1.311634499687e+02
+  2 KSP Residual norm 3.115647932696e+01
+  3 KSP Residual norm 2.029264535383e+01
+  4 KSP Residual norm 1.299912896120e+01
+  5 KSP Residual norm 8.652002917559e+00
+  6 KSP Residual norm 5.072787176514e+00
+  7 KSP Residual norm 4.944343936047e+00
+  8 KSP Residual norm 4.888450327041e+00
+  9 KSP Residual norm 4.104078708065e+00
+ 10 KSP Residual norm 3.960537634208e+00
+ 11 KSP Residual norm 2.055718367668e+00
+ 12 KSP Residual norm 1.420337037839e+00
+ 13 KSP Residual norm 8.114598623810e-01
+ 14 KSP Residual norm 6.852811296867e-01
+ 15 KSP Residual norm 5.796455359707e-01
+ 16 KSP Residual norm 4.414964922746e-01
+ 17 KSP Residual norm 3.447358230500e-01
+ 18 KSP Residual norm 2.760847007239e-01
+ 19 KSP Residual norm 1.220107653235e-01
+ 20 KSP Residual norm 1.101297592934e-01
+ 21 KSP Residual norm 9.778762904689e-02
+ 22 KSP Residual norm 8.455000739245e-02
+ 23 KSP Residual norm 7.183725512807e-02
+ 24 KSP Residual norm 6.942411302144e-02
+ 25 KSP Residual norm 5.255307812150e-02
+ 26 KSP Residual norm 2.343809625215e-02
+ 27 KSP Residual norm 1.565493825777e-02
+ 28 KSP Residual norm 1.045713962562e-02
+ 29 KSP Residual norm 8.441091695390e-03
+ 30 KSP Residual norm 6.864422105318e-03
+ 31 KSP Residual norm 2.748923944320e-03
+ 32 KSP Residual norm 1.616202230526e-03
+ 33 KSP Residual norm 1.494235372056e-03
+ 34 KSP Residual norm 1.415081585344e-03
+ 35 KSP Residual norm 1.232439551840e-03
+ 36 KSP Residual norm 8.245832553979e-04
+ 37 KSP Residual norm 7.022995049224e-04
+ 38 KSP Residual norm 6.183310006952e-04
+ 39 KSP Residual norm 5.368531037724e-04
+ 40 KSP Residual norm 4.785494275421e-04
+ 41 KSP Residual norm 4.336000218946e-04
+ 42 KSP Residual norm 3.981970493704e-04
+ 43 KSP Residual norm 3.703471671608e-04
+ 44 KSP Residual norm 3.475432970440e-04
+ 45 KSP Residual norm 3.285113160769e-04
+  Linear solve converged due to CONVERGED_RTOL iterations 45
 KSP Object: 4 MPI processes
   type: gmres
     restart=100, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
     happy breakdown tolerance 1e-30
   maximum iterations=1000, initial guess is zero
-  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  tolerances: relative=1e-08, absolute=1e-50, divergence=10000.
   right preconditioning
   using UNPRECONDITIONED norm type for convergence test
 PC Object: 4 MPI processes
@@ -63,32 +59,32 @@ PC Object: 4 MPI processes
     restriction/interpolation type - RESTRICT
     Local solver information for first block is in the following KSP and PC objects on rank 0:
     Use -ksp_view ::ascii_info_detail to display information for all blocks
-  KSP Object: (sub_) 1 MPI process
-    type: preonly
-    maximum iterations=10000, initial guess is zero
-    tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
-    left preconditioning
-    using NONE norm type for convergence test
-  PC Object: (sub_) 1 MPI process
-    type: cholesky
-      out-of-place factorization
-      tolerance for zero pivot 2.22045e-14
-      matrix ordering: nd
-      factor fill ratio given 5., needed 3.37836
-        Factored matrix follows:
-          Mat Object: (sub_) 1 MPI process
-            type: seqsbaij
-            rows=4176, cols=4176
-            package used to perform factorization: petsc
-            total: nonzeros=101246, allocated nonzeros=101246
-                block size is 1
-    linear system matrix = precond matrix:
-    Mat Object: (sub_) 1 MPI process
-      type: seqaij
-      rows=4176, cols=4176
-      total: nonzeros=55762, allocated nonzeros=55762
-      total number of mallocs used during MatSetValues calls=0
-        not using I-node routines
+    KSP Object: (sub_) 1 MPI process
+      type: preonly
+      maximum iterations=10000, initial guess is zero
+      tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
+      left preconditioning
+      using NONE norm type for convergence test
+    PC Object: (sub_) 1 MPI process
+      type: cholesky
+        out-of-place factorization
+        tolerance for zero pivot 2.22045e-14
+        matrix ordering: nd
+        factor fill ratio given 5., needed 3.37836
+          Factored matrix follows:
+            Mat Object: (sub_) 1 MPI process
+              type: seqsbaij
+              rows=4176, cols=4176
+              package used to perform factorization: petsc
+              total: nonzeros=101246, allocated nonzeros=101246
+                  block size is 1
+      linear system matrix = precond matrix:
+      Mat Object: (sub_) 1 MPI process
+        type: seqaij
+        rows=4176, cols=4176
+        total: nonzeros=55762, allocated nonzeros=55762
+        total number of mallocs used during MatSetValues calls=0
+          not using I-node routines
   linear system matrix followed by preconditioner matrix:
   Mat Object: 4 MPI processes
     type: normal
@@ -99,7 +95,7 @@ PC Object: 4 MPI processes
     total: nonzeros=223395, allocated nonzeros=223395
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 0.001062 / 40.197143 = 0.000026
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000735 / 40.197138 = 0.000018
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 9 unused database options. They are:

@@ -9,15 +9,21 @@
   8 KSP resid norm 2.738306777486e+02 normal eq resid norm 1.568395701599e-02 matrix norm 1.436464461053e+02
   9 KSP resid norm 2.738306773332e+02 normal eq resid norm 5.813677640951e-03 matrix norm 1.436464461053e+02
  10 KSP resid norm 2.738306772791e+02 normal eq resid norm 1.857410516622e-03 matrix norm 1.436464461053e+02
- 11 KSP resid norm 2.738306772742e+02 normal eq resid norm 7.124683747595e-04 matrix norm 1.436464461053e+02
- 12 KSP resid norm 2.738306772734e+02 normal eq resid norm 2.273524683667e-04 matrix norm 1.436464461053e+02
-Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 12
+ 11 KSP resid norm 2.738306772742e+02 normal eq resid norm 7.124683747596e-04 matrix norm 1.436464461053e+02
+ 12 KSP resid norm 2.738306772734e+02 normal eq resid norm 2.273524683672e-04 matrix norm 1.436464461053e+02
+ 13 KSP resid norm 2.738306772734e+02 normal eq resid norm 9.228128178646e-05 matrix norm 1.436464461053e+02
+ 14 KSP resid norm 2.738306772734e+02 normal eq resid norm 3.825499823721e-05 matrix norm 1.436464461053e+02
+ 15 KSP resid norm 2.738306772734e+02 normal eq resid norm 2.170097934290e-05 matrix norm 1.436464461053e+02
+ 16 KSP resid norm 2.738306772734e+02 normal eq resid norm 9.323551549322e-06 matrix norm 1.436464461053e+02
+ 17 KSP resid norm 2.738306772734e+02 normal eq resid norm 3.604435463177e-06 matrix norm 1.436464461053e+02
+ 18 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.594852182917e-06 matrix norm 1.436464461053e+02
+  Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 18
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
     using exact matrix norm
   maximum iterations=1000, initial guess is zero
-  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  tolerances: relative=1e-08, absolute=1e-50, divergence=10000.
   left preconditioning
   using UNPRECONDITIONED norm type for convergence test
 PC Object: 4 MPI processes
@@ -26,32 +32,32 @@ PC Object: 4 MPI processes
     restriction/interpolation type - BASIC
     Local solver information for first block is in the following KSP and PC objects on rank 0:
     Use -ksp_view ::ascii_info_detail to display information for all blocks
-  KSP Object: (sub_) 1 MPI process
-    type: preonly
-    maximum iterations=10000, initial guess is zero
-    tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
-    left preconditioning
-    using NONE norm type for convergence test
-  PC Object: (sub_) 1 MPI process
-    type: cholesky
-      out-of-place factorization
-      tolerance for zero pivot 2.22045e-14
-      matrix ordering: nd
-      factor fill ratio given 5., needed 8.49166
-        Factored matrix follows:
-          Mat Object: (sub_) 1 MPI process
-            type: seqsbaij
-            rows=2631, cols=2631
-            package used to perform factorization: petsc
-            total: nonzeros=146651, allocated nonzeros=146651
-                block size is 1
-    linear system matrix = precond matrix:
-    Mat Object: (sub_) 1 MPI process
-      type: seqaij
-      rows=2631, cols=2631
-      total: nonzeros=31909, allocated nonzeros=31909
-      total number of mallocs used during MatSetValues calls=0
-        not using I-node routines
+    KSP Object: (sub_) 1 MPI process
+      type: preonly
+      maximum iterations=10000, initial guess is zero
+      tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
+      left preconditioning
+      using NONE norm type for convergence test
+    PC Object: (sub_) 1 MPI process
+      type: cholesky
+        out-of-place factorization
+        tolerance for zero pivot 2.22045e-14
+        matrix ordering: nd
+        factor fill ratio given 5., needed 8.49166
+          Factored matrix follows:
+            Mat Object: (sub_) 1 MPI process
+              type: seqsbaij
+              rows=2631, cols=2631
+              package used to perform factorization: petsc
+              total: nonzeros=146651, allocated nonzeros=146651
+                  block size is 1
+      linear system matrix = precond matrix:
+      Mat Object: (sub_) 1 MPI process
+        type: seqaij
+        rows=2631, cols=2631
+        total: nonzeros=31909, allocated nonzeros=31909
+        total number of mallocs used during MatSetValues calls=0
+          not using I-node routines
   linear system matrix followed by preconditioner matrix:
   Mat Object: 4 MPI processes
     type: mpiaij
@@ -65,7 +71,7 @@ PC Object: 4 MPI processes
     total: nonzeros=117117, allocated nonzeros=117117
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 0.000120 / 273.830677 = 0.000000
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000001 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 10 unused database options. They are:

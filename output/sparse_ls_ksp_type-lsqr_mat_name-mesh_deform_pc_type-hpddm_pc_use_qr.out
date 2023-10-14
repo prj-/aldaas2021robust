@@ -1,20 +1,24 @@
   0 KSP resid norm 2.793108625211e+02
-  1 KSP resid norm 2.741426296850e+02 normal eq resid norm 1.773876555738e+01 matrix norm 1.436464461053e+02
-  2 KSP resid norm 2.738379512334e+02 normal eq resid norm 3.302948493341e+00 matrix norm 1.436464461053e+02
-  3 KSP resid norm 2.738307525409e+02 normal eq resid norm 2.389103090333e-01 matrix norm 1.436464461053e+02
-  4 KSP resid norm 2.738306820904e+02 normal eq resid norm 6.685891502005e-02 matrix norm 1.436464461053e+02
-  5 KSP resid norm 2.738306779228e+02 normal eq resid norm 2.180056438306e-02 matrix norm 1.436464461053e+02
-  6 KSP resid norm 2.738306773298e+02 normal eq resid norm 7.237723903759e-03 matrix norm 1.436464461053e+02
-  7 KSP resid norm 2.738306772789e+02 normal eq resid norm 2.160763722483e-03 matrix norm 1.436464461053e+02
-  8 KSP resid norm 2.738306772738e+02 normal eq resid norm 6.250414587166e-04 matrix norm 1.436464461053e+02
-  9 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.818933862211e-04 matrix norm 1.436464461053e+02
-Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 9
+  1 KSP resid norm 2.742026594973e+02 normal eq resid norm 1.931963644863e+01 matrix norm 1.436464461053e+02
+  2 KSP resid norm 2.738429268038e+02 normal eq resid norm 4.234874186751e+00 matrix norm 1.436464461053e+02
+  3 KSP resid norm 2.738307589799e+02 normal eq resid norm 2.520693874593e-01 matrix norm 1.436464461053e+02
+  4 KSP resid norm 2.738306807380e+02 normal eq resid norm 6.371544243267e-02 matrix norm 1.436464461053e+02
+  5 KSP resid norm 2.738306775630e+02 normal eq resid norm 1.475276720263e-02 matrix norm 1.436464461053e+02
+  6 KSP resid norm 2.738306772917e+02 normal eq resid norm 3.937227844619e-03 matrix norm 1.436464461053e+02
+  7 KSP resid norm 2.738306772752e+02 normal eq resid norm 1.258130627069e-03 matrix norm 1.436464461053e+02
+  8 KSP resid norm 2.738306772735e+02 normal eq resid norm 4.039842762245e-04 matrix norm 1.436464461053e+02
+  9 KSP resid norm 2.738306772734e+02 normal eq resid norm 1.200942763555e-04 matrix norm 1.436464461053e+02
+ 10 KSP resid norm 2.738306772734e+02 normal eq resid norm 3.472088347876e-05 matrix norm 1.436464461053e+02
+ 11 KSP resid norm 2.738306772734e+02 normal eq resid norm 7.558627065895e-06 matrix norm 1.436464461053e+02
+ 12 KSP resid norm 2.738306772734e+02 normal eq resid norm 2.798265588423e-06 matrix norm 1.436464461053e+02
+ 13 KSP resid norm 2.738306772734e+02 normal eq resid norm 7.514715048472e-07 matrix norm 1.436464461053e+02
+  Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 13
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
     using exact matrix norm
   maximum iterations=1000, initial guess is zero
-  tolerances:  relative=1e-08, absolute=1e-50, divergence=10000.
+  tolerances: relative=1e-08, absolute=1e-50, divergence=10000.
   left preconditioning
   using UNPRECONDITIONED norm type for convergence test
 PC Object: 4 MPI processes
@@ -28,7 +32,7 @@ PC Object: 4 MPI processes
   KSP Object: (pc_hpddm_levels_1_) 4 MPI processes
     type: preonly
     maximum iterations=10000, initial guess is zero
-    tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+    tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
     left preconditioning
     using NONE norm type for convergence test
   PC Object: (pc_hpddm_levels_1_) 4 MPI processes
@@ -50,28 +54,28 @@ PC Object: 4 MPI processes
       restriction/interpolation type - BASIC
       Local solver information for first block is in the following KSP and PC objects on rank 0:
       Use -pc_hpddm_levels_1_ksp_view ::ascii_info_detail to display information for all blocks
-    KSP Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-      type: preonly
-      maximum iterations=10000, initial guess is zero
-      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
-      left preconditioning
-      using NONE norm type for convergence test
-    PC Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-      type: qr
-        out-of-place factorization
-        tolerance for zero pivot 2.22045e-14
-        matrix ordering: external
-        factor fill ratio given 0., needed 0.
-          Factored matrix follows:
-            Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-              type: spqr
-              rows=2631, cols=2631
-              package used to perform factorization: spqr
-              total: nonzeros=179433, allocated nonzeros=179433
-      linear system matrix = precond matrix:
-      Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
-        type: normal
-        rows=2631, cols=2631
+      KSP Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+        type: preonly
+        maximum iterations=10000, initial guess is zero
+        tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
+        left preconditioning
+        using NONE norm type for convergence test
+      PC Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+        type: qr
+          out-of-place factorization
+          tolerance for zero pivot 2.22045e-14
+          matrix ordering: external
+          factor fill ratio given 0., needed 0.
+            Factored matrix follows:
+              Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+                type: spqr
+                rows=2631, cols=2631
+                package used to perform factorization: spqr
+                total: nonzeros=179433, allocated nonzeros=179433
+        linear system matrix = precond matrix:
+        Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
+          type: normal
+          rows=2631, cols=2631
     linear system matrix followed by preconditioner matrix:
     Mat Object: 4 MPI processes
       type: mpiaij
@@ -85,7 +89,7 @@ PC Object: 4 MPI processes
     KSP Object: (pc_hpddm_coarse_) 1 MPI process
       type: preonly
       maximum iterations=10000, initial guess is zero
-      tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+      tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
       left preconditioning
       using NONE norm type for convergence test
     PC Object: (pc_hpddm_coarse_) 1 MPI process
@@ -118,7 +122,7 @@ PC Object: 4 MPI processes
   Mat Object: 4 MPI processes
     type: normal
     rows=9393, cols=9393
-||A^T(Ax-b)|| / ||Ax-b|| = 0.000077 / 273.830677 = 0.000000
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000001 / 273.830677 = 0.000000
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 6 unused database options. They are:
