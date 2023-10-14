@@ -32,7 +32,7 @@ check: all sparse_ls.py
 			echo "$${cmd}"; \
 			$${cmd} > output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out || exit; \
 			breakdown=`grep -e DIVERGED_ITS -e DIVERGED_BREAKDOWN output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.out | wc -l | xargs echo`; \
-			if [ "$${breakdown}" != "2" ]; then  ${PETSC_DIR}/lib/petsc/bin/petscdiff output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.out output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out; fi; \
+			if [ "$${breakdown}" != "2" ]; then ${PETSC_DIR}/lib/petsc/bin/petscdiff output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.out output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out; fi; \
 			unlink output/sparse_ls_ksp_type-gmres_mat_name-$${MatName}_pc_type-$${PCType}.tmp.out 2> /dev/null; \
 		done \
 	done; \

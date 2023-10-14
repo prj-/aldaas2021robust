@@ -4,51 +4,44 @@
   3 KSP Residual norm 2.029264535384e+01 
   4 KSP Residual norm 1.299912896120e+01 
   5 KSP Residual norm 8.652002917560e+00 
-  6 KSP Residual norm 5.072787176514e+00 
-  7 KSP Residual norm 4.944343936049e+00 
-  8 KSP Residual norm 4.888450327039e+00 
-  9 KSP Residual norm 4.104078708044e+00 
- 10 KSP Residual norm 3.960537634209e+00 
- 11 KSP Residual norm 2.055718367915e+00 
- 12 KSP Residual norm 1.420337037922e+00 
- 13 KSP Residual norm 8.114598624478e-01 
- 14 KSP Residual norm 6.852811299713e-01 
- 15 KSP Residual norm 5.796455362383e-01 
- 16 KSP Residual norm 4.414964924933e-01 
- 17 KSP Residual norm 3.447358221139e-01 
- 18 KSP Residual norm 2.760846999631e-01 
- 19 KSP Residual norm 1.220107655545e-01 
- 20 KSP Residual norm 1.101297669723e-01 
- 21 KSP Residual norm 9.778764873426e-02 
- 22 KSP Residual norm 8.455004323066e-02 
- 23 KSP Residual norm 7.183731423448e-02 
- 24 KSP Residual norm 6.942423723533e-02 
- 25 KSP Residual norm 5.255339825053e-02 
- 26 KSP Residual norm 2.343841171472e-02 
- 27 KSP Residual norm 1.565386350525e-02 
- 28 KSP Residual norm 1.045445547806e-02 
- 29 KSP Residual norm 8.437047452012e-03 
- 30 KSP Residual norm 6.854803325981e-03 
- 31 KSP Residual norm 2.737774346110e-03 
- 32 KSP Residual norm 1.601654672517e-03 
- 33 KSP Residual norm 1.470144870121e-03 
- 34 KSP Residual norm 1.367036411543e-03 
- 35 KSP Residual norm 1.111872005042e-03 
- 36 KSP Residual norm 8.639410726495e-04 
- 37 KSP Residual norm 7.789646632753e-04 
- 38 KSP Residual norm 6.989029556357e-04 
- 39 KSP Residual norm 6.220800598506e-04 
- 40 KSP Residual norm 5.677234892591e-04 
- 41 KSP Residual norm 5.200867271344e-04 
- 42 KSP Residual norm 4.811331732167e-04 
- 43 KSP Residual norm 4.497341050626e-04 
- 44 KSP Residual norm 4.235532609886e-04 
- 45 KSP Residual norm 4.015204955672e-04 
- 46 KSP Residual norm 3.825785529012e-04 
- 47 KSP Residual norm 3.660947304498e-04 
- 48 KSP Residual norm 3.515703437395e-04 
- 49 KSP Residual norm 3.386488018937e-04 
-Linear solve converged due to CONVERGED_RTOL iterations 49
+  6 KSP Residual norm 5.072787176512e+00 
+  7 KSP Residual norm 4.944343936045e+00 
+  8 KSP Residual norm 4.888450327041e+00 
+  9 KSP Residual norm 4.104078708099e+00 
+ 10 KSP Residual norm 3.960537634206e+00 
+ 11 KSP Residual norm 2.055718367538e+00 
+ 12 KSP Residual norm 1.420337037809e+00 
+ 13 KSP Residual norm 8.114598622967e-01 
+ 14 KSP Residual norm 6.852811292048e-01 
+ 15 KSP Residual norm 5.796455353046e-01 
+ 16 KSP Residual norm 4.414964915239e-01 
+ 17 KSP Residual norm 3.447358241236e-01 
+ 18 KSP Residual norm 2.760847005892e-01 
+ 19 KSP Residual norm 1.220107635809e-01 
+ 20 KSP Residual norm 1.101297385300e-01 
+ 21 KSP Residual norm 9.778757017320e-02 
+ 22 KSP Residual norm 8.454990788223e-02 
+ 23 KSP Residual norm 7.183708927672e-02 
+ 24 KSP Residual norm 6.942379661788e-02 
+ 25 KSP Residual norm 5.255225770100e-02 
+ 26 KSP Residual norm 2.343734392273e-02 
+ 27 KSP Residual norm 1.565680132636e-02 
+ 28 KSP Residual norm 1.046222701483e-02 
+ 29 KSP Residual norm 8.448712775376e-03 
+ 30 KSP Residual norm 6.882886570866e-03 
+ 31 KSP Residual norm 2.773483245242e-03 
+ 32 KSP Residual norm 1.649397739515e-03 
+ 33 KSP Residual norm 1.543206989630e-03 
+ 34 KSP Residual norm 1.501521889896e-03 
+ 35 KSP Residual norm 1.458950543155e-03 
+ 36 KSP Residual norm 1.048894362045e-03 
+ 37 KSP Residual norm 6.835088324815e-04 
+ 38 KSP Residual norm 5.392673553845e-04 
+ 39 KSP Residual norm 4.540909226623e-04 
+ 40 KSP Residual norm 3.941771482538e-04 
+ 41 KSP Residual norm 3.535466485696e-04 
+ 42 KSP Residual norm 3.231808156433e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 42
 KSP Object: 4 MPI processes
   type: gmres
     restart=100, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
@@ -99,7 +92,7 @@ PC Object: 4 MPI processes
     total: nonzeros=223395, allocated nonzeros=223395
     total number of mallocs used during MatSetValues calls=0
       not using I-node (on process 0) routines
-||A^T(Ax-b)|| / ||Ax-b|| = 0.001062 / 40.197143 = 0.000026
+||A^T(Ax-b)|| / ||Ax-b|| = 0.000735 / 40.197138 = 0.000018
 WARNING! There are options you set that were not used!
 WARNING! could be spelling mistake, etc!
 There are 9 unused database options. They are:
