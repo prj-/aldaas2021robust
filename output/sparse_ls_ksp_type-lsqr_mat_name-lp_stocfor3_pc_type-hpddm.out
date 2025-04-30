@@ -31,7 +31,7 @@
  30 KSP resid norm 4.019713720717e+01 normal eq resid norm 2.638907235907e-06 matrix norm 3.062907705646e+04
  31 KSP resid norm 4.019713720717e+01 normal eq resid norm 1.266364360353e-06 matrix norm 3.062907705646e+04
  32 KSP resid norm 4.019713720717e+01 normal eq resid norm 5.479448866625e-07 matrix norm 3.062907705646e+04
-Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 32
+Linear solve converged due to CONVERGED_RTOL_NORMAL_EQUATIONS iterations 32
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
@@ -53,11 +53,11 @@ PC Object: 4 MPI processes
     maximum iterations=10000, initial guess is zero
     tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
     left preconditioning
-    using NONE norm type for convergence test
+    not checking for convergence
   PC Object: (pc_hpddm_levels_1_) 4 MPI processes
     type: shell
       no name
-    linear system matrix followed by preconditioner matrix:
+    linear system matrix, followed by the matrix used to construct the preconditioner:
     Mat Object: 4 MPI processes
       type: mpiaij
       rows=23541, cols=16675
@@ -81,28 +81,27 @@ PC Object: 4 MPI processes
         maximum iterations=10000, initial guess is zero
         tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
         left preconditioning
-        using NONE norm type for convergence test
+        not checking for convergence
       PC Object: (pc_hpddm_levels_1_sub_) 1 MPI process
         type: cholesky
           out-of-place factorization
           tolerance for zero pivot 2.22045e-14
           matrix ordering: nd
           factor fill ratio given 5., needed 3.37836
-            Factored matrix follows:
+            Factored matrix:
               Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
                 type: seqsbaij
                 rows=4176, cols=4176
                 package used to perform factorization: petsc
                 total: nonzeros=101246, allocated nonzeros=101246
-                    block size is 1
-        linear system matrix = precond matrix:
+        linear system matrix, which is also used to construct the preconditioner:
         Mat Object: (pc_hpddm_levels_1_sub_) 1 MPI process
           type: seqaij
           rows=4176, cols=4176
           total: nonzeros=55762, allocated nonzeros=55762
           total number of mallocs used during MatSetValues calls=0
             not using I-node routines
-    linear system matrix followed by preconditioner matrix:
+    linear system matrix, followed by the matrix used to construct the preconditioner:
     Mat Object: 4 MPI processes
       type: mpiaij
       rows=23541, cols=16675
@@ -120,28 +119,26 @@ PC Object: 4 MPI processes
       maximum iterations=10000, initial guess is zero
       tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
       left preconditioning
-      using NONE norm type for convergence test
+      not checking for convergence
     PC Object: (pc_hpddm_coarse_) 1 MPI process
       type: cholesky
         out-of-place factorization
         tolerance for zero pivot 2.22045e-14
         matrix ordering: natural
         factor fill ratio given 5., needed 1.1
-          Factored matrix follows:
+          Factored matrix:
             Mat Object: (pc_hpddm_coarse_) 1 MPI process
               type: seqsbaij
               rows=80, cols=80, bs=20
               package used to perform factorization: petsc
               total: nonzeros=4400, allocated nonzeros=4400
-                  block size is 20
-      linear system matrix = precond matrix:
+      linear system matrix, which is also used to construct the preconditioner:
       Mat Object: (pc_hpddm_coarse_) 1 MPI process
         type: seqsbaij
         rows=80, cols=80, bs=20
         total: nonzeros=4000, allocated nonzeros=4000
         total number of mallocs used during MatSetValues calls=0
-            block size is 20
-  linear system matrix followed by preconditioner matrix:
+  linear system matrix, followed by the matrix used to construct the preconditioner:
   Mat Object: 4 MPI processes
     type: mpiaij
     rows=23541, cols=16675

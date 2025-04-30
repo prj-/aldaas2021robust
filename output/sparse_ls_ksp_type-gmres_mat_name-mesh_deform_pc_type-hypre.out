@@ -1,11 +1,8 @@
 
 
  Num MPI tasks = 4
-
  Num OpenMP threads = 1
-
-
-BoomerAMG SETUP PARAMETERS:
+ Execution policy = Host
 
  Max levels = 25
  Num levels = 8
@@ -17,10 +14,7 @@ BoomerAMG SETUP PARAMETERS:
  Coarsening Type = Falgout-CLJP 
  measures are determined locally
 
-
- No global partition option chosen.
-
- Interpolation = modified classical interpolation
+ Interpolation = modified classical
 
 Operator Matrix Information:
 
@@ -94,8 +88,8 @@ BoomerAMG SOLVER PARAMETERS:
 Linear solve converged due to CONVERGED_RTOL iterations 18
 KSP Object: 4 MPI processes
   type: gmres
-    restart=100, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
-    happy breakdown tolerance 1e-30
+    restart=100, using classical (unmodified) Gram-Schmidt orthogonalization with no iterative refinement
+    happy breakdown tolerance=1e-30
   maximum iterations=1000, initial guess is zero
   tolerances: relative=1e-08, absolute=1e-50, divergence=10000.
   right preconditioning
@@ -129,7 +123,7 @@ PC Object: 4 MPI processes
       Coarsen type        Falgout
       Interpolation type  classical
       SpGEMM type         hypre
-  linear system matrix followed by preconditioner matrix:
+  linear system matrix, followed by the matrix used to construct the preconditioner:
   Mat Object: 4 MPI processes
     type: normal
     rows=9393, cols=9393

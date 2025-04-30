@@ -54,7 +54,7 @@
  53 KSP resid norm 4.019713720717e+01 normal eq resid norm 4.661539826407e-06 matrix norm 3.062907705646e+04
  54 KSP resid norm 4.019713720717e+01 normal eq resid norm 2.848922588061e-06 matrix norm 3.062907705646e+04
  55 KSP resid norm 4.019713720717e+01 normal eq resid norm 3.456510009989e-07 matrix norm 3.062907705646e+04
-Linear solve converged due to CONVERGED_RTOL_NORMAL iterations 55
+Linear solve converged due to CONVERGED_RTOL_NORMAL_EQUATIONS iterations 55
 KSP Object: 4 MPI processes
   type: lsqr
     standard error not computed
@@ -74,28 +74,27 @@ PC Object: 4 MPI processes
       maximum iterations=10000, initial guess is zero
       tolerances: relative=1e-05, absolute=1e-50, divergence=10000.
       left preconditioning
-      using NONE norm type for convergence test
+      not checking for convergence
     PC Object: (sub_) 1 MPI process
       type: cholesky
         out-of-place factorization
         tolerance for zero pivot 2.22045e-14
         matrix ordering: nd
         factor fill ratio given 5., needed 3.37836
-          Factored matrix follows:
+          Factored matrix:
             Mat Object: (sub_) 1 MPI process
               type: seqsbaij
               rows=4176, cols=4176
               package used to perform factorization: petsc
               total: nonzeros=101246, allocated nonzeros=101246
-                  block size is 1
-      linear system matrix = precond matrix:
+      linear system matrix, which is also used to construct the preconditioner:
       Mat Object: (sub_) 1 MPI process
         type: seqaij
         rows=4176, cols=4176
         total: nonzeros=55762, allocated nonzeros=55762
         total number of mallocs used during MatSetValues calls=0
           not using I-node routines
-  linear system matrix followed by preconditioner matrix:
+  linear system matrix, followed by the matrix used to construct the preconditioner:
   Mat Object: 4 MPI processes
     type: mpiaij
     rows=23541, cols=16675

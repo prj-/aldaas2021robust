@@ -19,7 +19,8 @@
   use petscksp
   implicit none
   Vec                            x,b,c
-  Mat ::                         A,Bf,aux,Cf = PETSC_NULL_MAT,perm,Neumann(2)
+  Mat ::                         A,Bf,aux,Cf = PETSC_NULL_MAT,perm
+  Mat , pointer ::               Neumann(:)
   MatPartitioning                mpart
   KSP                            ksp
   PC                             pc
@@ -93,11 +94,11 @@
       PetscCallA(MatGetSize(A,m,PETSC_NULL_INTEGER,ierr))
       PetscCallA(ISCreateStride(PETSC_COMM_SELF,m,0,1,rows,ierr))
       PetscCallA(MatSetOption(A,MAT_SUBMAT_SINGLEIS,PETSC_TRUE,ierr))
-      PetscCallA(MatCreateSubMatrices(A,1,rows,cols(1),MAT_INITIAL_MATRIX,Neumann,ierr))
+      PetscCallA(MatCreateSubMatrices(A,1,[rows],[cols(1)],MAT_INITIAL_MATRIX,Neumann,ierr))
       PetscCallA(MatFindZeroRows(Neumann(1),is,ierr))
       PetscCallA(MatDestroySubMatrices(1,Neumann,ierr))
       PetscCallA(MatIncreaseOverlap(Bf,1,cols,1,ierr))
-      PetscCallA(MatCreateSubMatrices(A,1,rows,cols(1),MAT_INITIAL_MATRIX,Neumann,ierr))
+      PetscCallA(MatCreateSubMatrices(A,1,[rows],[cols(1)],MAT_INITIAL_MATRIX,Neumann,ierr))
       PetscCallA(ISDestroy(rows,ierr))
       PetscCallA(MatZeroRowsIS(Neumann(1),is,0.0D0,PETSC_NULL_VEC,PETSC_NULL_VEC,ierr))
       PetscCallA(ISDestroy(is,ierr))
